@@ -7,6 +7,9 @@ Samuel Hernández Ballesteros
 
 Pablo Pérez Ruíz
 
+Harí Carreras Pérez
+
+Juan Antonio Ruiz Torres
 
 ## Introducción
 La [oficina de software libre](http://http://osl.ugr.es/), en colaboración con la Gerencia de la UGR, el [CSIRC](http://http://csirc.ugr.es/), el resto de la [Delegación del rector para las TIC](http://detic.ugr.es/) y la [Unidad de Calidad Ambiental](http://www.ugr.es/pages/servicios/uca) de la UGR ha lanzado un campaña de donación de ordenadores a Asociaciones y organizaciones sin ánimo de lucro.
