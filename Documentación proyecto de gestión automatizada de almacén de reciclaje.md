@@ -68,12 +68,17 @@ El [back-end](http://es.wikipedia.org/wiki/Front-end_y_back-end) deberá tener l
 
 Nos situamos en un proyecto del tipo SaaS/PaaS es decir se utilizarán herramientas desde los que se accederá vía Internet desde un cliente (SaaS) y también se utilizarán servicios de cloud computing (PaaS), en este caso los servicios Cloud de Google.
 
-Para el front-end se utilizarán herramientas de diseño web para la realización de la web como pueden ser Javascript, [MongoDB](http://es.wikipedia.org/wiki/MongoDB), [express.js](http://blog.solucionex.com/javascript/expressjs-un-framework-para-nodejs), [node.js](http://es.wikipedia.org/wiki/Node.js), HTML5, CSS3 etc.
+Para el front-end se utilizarán herramientas de diseño web para la realización de la web como pueden ser Javascript, HTML5, CSS3 etc.
 
 También, para la lectura de los códigos QR se desarrollará una aplicación [Android](http://developer.android.com/index.html), permitiendo modificar y comprobar los datos de un equipo.
 
 Para el back-end se utilizarán herramientas que nos proporciona Google para acceder a los documentos de Google Docs que necesitamos y así recuperar, insertar y modificar información en los mismos.
 
+REST API MCV - Ruby On Rails
+
+
+REST API MCV - Node.Js - Express.Js - MondoDB
+[MongoDB](http://es.wikipedia.org/wiki/MongoDB), [express.js](http://blog.solucionex.com/javascript/expressjs-un-framework-para-nodejs), [node.js](http://es.wikipedia.org/wiki/Node.js),
 
 - - -
 Documento creado por Samuel Hernández Ballesteros a fecha de: 26 de Octubre de 2014.
