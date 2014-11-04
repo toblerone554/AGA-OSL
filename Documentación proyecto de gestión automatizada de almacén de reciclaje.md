@@ -77,7 +77,8 @@ Para el back-end se utilizarán herramientas que nos proporciona Google para acc
 REST API MCV - Ruby On Rails
 
 
-REST API MCV - Node.Js - Express.Js - MondoDB
+REST API MCV - Node.Js - Express.Js - MongoDB
+
 [MongoDB](http://es.wikipedia.org/wiki/MongoDB), [express.js](http://blog.solucionex.com/javascript/expressjs-un-framework-para-nodejs), [node.js](http://es.wikipedia.org/wiki/Node.js),
 
 - - -
