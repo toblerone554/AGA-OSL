@@ -74,12 +74,16 @@ También, para la lectura de los códigos QR se desarrollará una aplicación [A
 
 Para el back-end se utilizarán herramientas que nos proporciona Google para acceder a los documentos de Google Docs que necesitamos y así recuperar, insertar y modificar información en los mismos.
 
+La idea es implementar una API REST que sirva de la funcionalidad necesaria a todos los clientes (aplicación android, web, etc..) que necesitemos.
+
 REST API MCV - Ruby On Rails
 
-
-REST API MCV - Node.Js - Express.Js - MongoDB
+[API REST - Node.js - Express.js - MongoDB - Mongoose](http://carlosazaustre.es/blog/como-implementar-una-api-rest-con-mongodb-node-js-usando-express-v4/)
 
 [MongoDB](http://es.wikipedia.org/wiki/MongoDB), [express.js](http://blog.solucionex.com/javascript/expressjs-un-framework-para-nodejs), [node.js](http://es.wikipedia.org/wiki/Node.js),
+
+
+
 
 - - -
 Documento creado por Samuel Hernández Ballesteros a fecha de: 26 de Octubre de 2014.
