@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 // puede ser movil, aplicación web con angular, backbone, jquery a secas ó javascript reciba sus
 // json los parsee y haga lo que tenga que hacer.
 app.get('/', function(req, res){
-	res.send('Hola, Mundo!');
+	res.sendFile('./web/index.html', {root: __dirname })
 });
 
 // Esto llama al fichero routes.js

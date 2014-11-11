@@ -25,32 +25,6 @@ module.exports = function(app){
 		console.log(req.body);
 
 		var material = new Material({
-			referencia: req.body.referencia;
-			revisado: req.body.revisado;
-			localizacion: req.body.localizacion;
-			tipo: req.body.tipo;
-			cpu: req.body.cpu;
-			mhz: req.body.mhz;
-			ram: req.body.ram;
-			cd_dvd: req.body.cd_dvd;
-			ethernet: req.body.ethernet;
-			nota: req.body.nota;
-			campania: req.body.campania;
-			puntuacion: req.body.puntuacion;
-		});
-
-		material.save(function(err){
-			if(!err)  console.log('Material guardado!');
-			else console.log('ERROR:' + err);
-		});
-
-		res.send(material);
-	};
-
-	// PUT (Update)
-	updateMaterial = function(req, res){
-		Material.findById(req.params.id, function(err, material){
-			
 			referencia: req.body.referencia,
 			revisado: req.body.revisado,
 			localizacion: req.body.localizacion,
@@ -66,6 +40,32 @@ module.exports = function(app){
 		});
 
 		material.save(function(err){
+			if(!err)  console.log('Material guardado!');
+			else console.log('ERROR:' + err);
+		});
+
+		res.send(material);
+	};
+
+	// PUT (Update)
+	updateMaterial = function(req, res){
+		Material.findById(req.params.id, function(err, material){
+			
+			referencia: req.body.referencia;
+			revisado: req.body.revisado;
+			localizacion: req.body.localizacion;
+			tipo: req.body.tipo;
+			cpu: req.body.cpu;
+			mhz: req.body.mhz;
+			ram: req.body.ram;
+			cd_dvd: req.body.cd_dvd;
+			ethernet: req.body.ethernet;
+			nota: req.body.nota;
+			campania: req.body.campania;
+			puntuacion: req.body.puntuacion;
+		});
+
+		material.save(function(err){
 			if(!err) console.log('Material Actualizado!');
 			else console.log('ERROR: ' + err);
 		});
@@ -73,7 +73,7 @@ module.exports = function(app){
 
 	// DELETE
 	deleteMaterial = function(req, res){
-		SerieTV.findById(req.params.id, function(err,material){
+		Material.findById(req.params.id, function(err,material){
 			material.remove(function(err){
 				if(!err) console.log('Material Borrado!');
 				else console.log('ERROR: ' + err);

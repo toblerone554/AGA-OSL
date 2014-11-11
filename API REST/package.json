@@ -1,6 +1,6 @@
 {
-	"name": "APIRest",
-	"version": "0.0.1",
+	"name": "AGA-OSL",
+	"version": "0.0.1-1",
 	"description": "Ejemplo de API Rest",
 	"main": "server.js",
 	"dependencies": {
@@ -8,5 +8,12 @@
 		"mongoose": "latest",
 		"body-parser": "latest",
 		"method-override": "latest"
-	}	
+	},
+	"subdomain": "aga-osl",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"engines": {
+		"node": "0.10.x"
+	}
 }

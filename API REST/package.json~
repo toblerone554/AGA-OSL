@@ -1,0 +1,19 @@
+{
+	"name": "AGA-OSL",
+	"version": "0.0.1",
+	"description": "Ejemplo de API Rest",
+	"main": "server.js",
+	"dependencies": {
+		"express": "latest",
+		"mongoose": "latest",
+		"body-parser": "latest",
+		"method-override": "latest"
+	},
+	"subdomain": "agaosl",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"engines": {
+		"node": "0.10.x"
+	}
+}
