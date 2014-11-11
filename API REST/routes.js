@@ -73,7 +73,7 @@ module.exports = function(app){
 
 	// DELETE
 	deleteMaterial = function(req, res){
-		SerieTV.findById(req.params.id, function(err,material){
+		Material.findById(req.params.id, function(err,material){
 			material.remove(function(err){
 				if(!err) console.log('Material Borrado!');
 				else console.log('ERROR: ' + err);
