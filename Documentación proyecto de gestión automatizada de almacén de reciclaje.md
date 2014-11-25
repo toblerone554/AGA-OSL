@@ -82,13 +82,20 @@ REST API MCV - Ruby On Rails
 
 [MongoDB](http://es.wikipedia.org/wiki/MongoDB), [express.js](http://blog.solucionex.com/javascript/expressjs-un-framework-para-nodejs), [node.js](http://es.wikipedia.org/wiki/Node.js),
 
+Parte de la aplicación Android:
 
+Integración del codigo QR en la aplicación: para dicha intregación vamos a utilizar ZXing, ya que tambien en un futuro la aplicación podría generar dichos codigos QR e imprimirlos con el movil desde la impresora.
+[GITHUB ZXing](https://github.com/Androideity/Tutorial_ZXingConAndroid)
+
+Tutorial de compilación y uso: 
+
+[Tutorial ZXing](http://androideity.com/2011/11/23/trabajar-con-codigos-qr-en-tus-aplicaciones-android/) 
 
 
 - - -
 Documento creado por Samuel Hernández Ballesteros a fecha de: 26 de Octubre de 2014.
 
-Modificaciones:
+Modificaciones: Juan Antonio Marín Sánchez: 25 noviembre de 2014
 
 - - -
 
