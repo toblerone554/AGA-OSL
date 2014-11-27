@@ -13,4 +13,4 @@ Integrantes actuales:
 
 [Proyecto inscrito en el certamen de proyectos libres de la UGR](http://osl.ugr.es/bases-de-los-premios-a-proyectos-libres-de-la-ugr/)
 
-[Aplicación desplegada](https://aga-osl.nodejitsu.com/)
+[Aplicación desplegada](https://aga-osl.herokuapp.com/)
