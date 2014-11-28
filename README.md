@@ -13,4 +13,5 @@ Integrantes actuales:
 
 [Proyecto inscrito en el certamen de proyectos libres de la UGR](http://osl.ugr.es/bases-de-los-premios-a-proyectos-libres-de-la-ugr/)
 
+Importante: Este repositorio no contiene la app REST ni la web. Puedes acceder a su [correpondiente repo](https://github.com/hcarreras/AGA-OSL-rails-app)
 [Aplicación desplegada](https://aga-osl.herokuapp.com/)
