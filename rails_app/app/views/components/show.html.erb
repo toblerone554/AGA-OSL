@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Referencia:</strong>
+  <%= @component.referencia %>
+</p>
+
+<p>
+  <strong>Revisado:</strong>
+  <%= @component.revisado %>
+</p>
+
+<p>
+  <strong>Localizacion:</strong>
+  <%= @component.localizacion %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @component.tipo %>
+</p>
+
+<p>
+  <strong>Cpu:</strong>
+  <%= @component.cpu %>
+</p>
+
+<p>
+  <strong>Ram:</strong>
+  <%= @component.ram %>
+</p>
+
+<%= link_to 'Edit', edit_component_path(@component) %> |
+<%= link_to 'Back', components_path %>

@@ -1,0 +1,37 @@
+<h1>Listing components</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Referencia</th>
+      <th>Revisado</th>
+      <th>Localizacion</th>
+      <th>Tipo</th>
+      <th>Cpu</th>
+      <th>Ram</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @components.each do |component| %>
+      <tr>
+        <td><%= component.referencia %></td>
+        <td><%= component.revisado %></td>
+        <td><%= component.localizacion %></td>
+        <td><%= component.tipo %></td>
+        <td><%= component.cpu %></td>
+        <td><%= component.ram %></td>
+        <td><%= link_to 'Show', component %></td>
+        <td><%= link_to 'Edit', edit_component_path(component) %></td>
+        <td><%= link_to 'Destroy', component, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Component', new_component_path %>
