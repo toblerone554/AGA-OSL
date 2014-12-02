@@ -91,11 +91,14 @@ Tutorial de compilación y uso:
 
 [Tutorial ZXing](http://androideity.com/2011/11/23/trabajar-con-codigos-qr-en-tus-aplicaciones-android/) 
 
+Para acceder a información de forma remota desde nuestra aplicación lo haremos a través de una petición Android REST. Para ello usaremos la clase especial de tipo genérico "AsyncTask", extendiendo de ella y utilizándola.
+
+[Tutorial Android REST y AsyncTask](http://www.arquitecturajava.com/android-rest-asynctask/)
 
 - - -
 Documento creado por Samuel Hernández Ballesteros a fecha de: 26 de Octubre de 2014.
 
 Modificaciones: Juan Antonio Marín Sánchez: 25 noviembre de 2014
-
+                Pablo Pérez Ruiz: 02 Diciembre 2014
 - - -
 
