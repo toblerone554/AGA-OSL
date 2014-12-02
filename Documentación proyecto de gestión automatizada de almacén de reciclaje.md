@@ -99,6 +99,7 @@ Para acceder a información de forma remota desde nuestra aplicación lo haremos
 Documento creado por Samuel Hernández Ballesteros a fecha de: 26 de Octubre de 2014.
 
 Modificaciones: Juan Antonio Marín Sánchez: 25 noviembre de 2014
-                Pablo Pérez Ruiz: 02 Diciembre 2014
+
+Pablo Pérez Ruiz: 02 Diciembre 2014
 - - -
 
