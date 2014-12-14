@@ -105,7 +105,8 @@ En nuestro caso para que funcione nuestra aplicación REST instalamos Ruby On Ra
 
 ![P3-8](http://i60.tinypic.com/2s66dky.jpg)
 
-Una vez desplegada podemos acceder a través de la siguiente dirección (Contenedor AGA-osl):
+Tenemos una máquina virtual para pruebas que está ubicada en la nube corriendo bajo Ubuntu 14.04.
+La ip del lxc-web panel es http://178.62.92.114:5000/
 
 
 # Qué tenemos hasta ahora
