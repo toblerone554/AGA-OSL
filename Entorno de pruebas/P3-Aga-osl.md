@@ -3,9 +3,13 @@
 Integrantes actuales:
 
 Juan Antonio Marin Sanchez
+
 Pablo Perez Ruiz
+
 Samuel Hernández Ballesteros
+
 Harí Carreras Pérez
+
 Juan Antonio Ruiz Torres
 
 El primer paso será crear un "puente" con nuestra interfaz de red. Nos servirá para enjaular aplicaciones y servicios, funcionando como una especie de chroot, pero mucho más versátil.
