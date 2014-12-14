@@ -1,1 +1,0 @@
-###Sincronizacion de Pablo
