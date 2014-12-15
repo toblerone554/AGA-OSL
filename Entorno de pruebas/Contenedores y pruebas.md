@@ -143,7 +143,7 @@ En la parte de documentación y pruebas tenemos:
 
 **Documentación:**
 
-[Explicación del proyecto v1.0](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n%20proyecto%20de%20gesti%C3%B3n%20automatizada%20de%20almac%C3%A9n%20de%20reciclaje.md)
+[Explicación del proyecto v1.0](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20proyecto%20de%20gesti%C3%B3n%20automatizada%20de%20almac%C3%A9n%20de%20reciclaje.md)
 
 [Presentación v1.0](https://github.com/Samu92/AGA-OSL/tree/master/Presentaci%C3%B3n)
 
