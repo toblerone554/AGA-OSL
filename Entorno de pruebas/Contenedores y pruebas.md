@@ -161,9 +161,10 @@ En la parte de documentación y pruebas tenemos:
 
 **Pruebas unitarias:**
 
-Pruebas en el REST Ruby On Rails con Test::Unit
+Pruebas en el REST Ruby On Rails con Rspec
 
-Por el momento no tenemos pruebas
+Hacemos peticiones del index tanto en formato html como JSON (que usará la aplicación android) para coprobar que todo está en orden:
+[Test funcionando](http://s3.postimg.org/yxy22uno3/Screen_Shot_2014_12_16_at_13_48_57.png)
 
 **Monitorización:**
 
