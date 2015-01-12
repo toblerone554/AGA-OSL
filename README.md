@@ -6,7 +6,6 @@ Integrantes actuales:
 2. Pablo Perez Ruiz
 3. Samuel Hernández Ballesteros
 4. Harí Carreras Pérez
-5. Juan Antonio Ruiz Torres
 
 Servidor Web realizado con Ruby On Rails
 
