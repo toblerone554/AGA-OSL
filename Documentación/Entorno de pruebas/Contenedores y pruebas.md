@@ -135,11 +135,13 @@ A día de hoy tenemos desarollada una primera versión de la aplicación REST re
 
 [Repositorio de la aplicación REST Ruby On Rails](https://github.com/hcarreras/AGA-OSL-rails-app)
 
+[Aplicación desplegada](http://aga-osl.herokuapp.com/)
+
 También estamos desarrollando dos aplicaciones de tipo cliente que interactuarán con esta aplicación haciendo uso de la información que reciban.
 
 Estas aplicaciones de tipo cliente son una página web y una aplicación Android que tendrá la funcionalidad de trabajar con códigos QR.
 
-[Aplicación Android](https://github.com/Samu92/AGA-OSL/tree/master/Aplicacion-Android)
+[Aplicación Android](https://github.com/Samu92/AGA-OSL-Android-App)
 
 La web se desarrollará en el mismo repositorio que el REST.
 
@@ -149,20 +151,19 @@ En la parte de documentación y pruebas tenemos:
 
 [Explicación del proyecto v1.0](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20proyecto%20de%20gesti%C3%B3n%20automatizada%20de%20almac%C3%A9n%20de%20reciclaje.md)
 
-[Presentación v1.0](https://github.com/Samu92/AGA-OSL/tree/master/Presentaci%C3%B3n)
+[Presentación v1.0](https://github.com/Samu92/AGA-OSL/tree/master/Documentaci%C3%B3n/Presentaci%C3%B3n)
 
 **Contenedores:**
 
-[Contenedor debianita que contiene REST Ruby On Rails - Documentación](https://github.com/Samu92/AGA-OSL/blob/master/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+[Contenedor debianita que contiene REST Ruby On Rails - Documentación](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
 
 [Contenedor desplegado](http://178.62.92.114:3000/)
 
 **Pruebas unitarias:**
 
-Pruebas en el REST Ruby On Rails con Rspec
+Pruebas en el REST Ruby On Rails con Test::Unit
 
-Hacemos peticiones del index tanto en formato html como JSON (que usará la aplicación android) para coprobar que todo está en orden:
-[Test funcionando](http://s3.postimg.org/yxy22uno3/Screen_Shot_2014_12_16_at_13_48_57.png)
+Por el momento no tenemos pruebas
 
 **Monitorización:**
 
