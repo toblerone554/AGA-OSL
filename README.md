@@ -17,7 +17,7 @@ También estamos desarrollando dos aplicaciones de tipo cliente que interactuar�
 
 Estas aplicaciones de tipo cliente son una página web y una aplicación Android que tendrá la funcionalidad de trabajar con códigos QR.
 
-[Aplicación Android](https://github.com/Samu92/AGA-OSL/tree/master/Aplicacion-Android)
+[Aplicación Android](https://github.com/Samu92/AGA-OSL-Android-App)
 
 La web se desarrollará en el mismo repositorio que el REST.
 
@@ -27,11 +27,11 @@ En la parte de documentación y pruebas tenemos:
 
 [Explicación del proyecto v1.0](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20proyecto%20de%20gesti%C3%B3n%20automatizada%20de%20almac%C3%A9n%20de%20reciclaje.md)
 
-[Presentación v1.0](https://github.com/Samu92/AGA-OSL/tree/master/Presentaci%C3%B3n)
+[Presentación v1.0](https://github.com/Samu92/AGA-OSL/tree/master/Documentaci%C3%B3n/Presentaci%C3%B3n)
 
 **Contenedores:**
 
-[Contenedor debianita que contiene REST Ruby On Rails - Documentación](https://github.com/Samu92/AGA-OSL/blob/master/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+[Contenedor debianita que contiene REST Ruby On Rails - Documentación](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
 
 [Contenedor desplegado](http://178.62.92.114:3000/)
 
