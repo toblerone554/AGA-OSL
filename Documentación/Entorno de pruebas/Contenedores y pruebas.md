@@ -10,8 +10,6 @@ Samuel Hernández Ballesteros
 
 Harí Carreras Pérez
 
-Juan Antonio Ruiz Torres
-
 
 - - -
 
