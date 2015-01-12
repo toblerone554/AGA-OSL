@@ -9,7 +9,7 @@ Integrantes actuales:
 
 Servidor Web realizado con Ruby On Rails
 
-[Repositorio de la aplicación REST Ruby On Rails](https://github.com/hcarreras/AGA-OSL-rails-app)
+[Repositorio de la aplicación REST Ruby On Rails](https://github.com/Samu92/AGA-OSL-Android-App)
 
 [Aplicación desplegada](http://aga-osl.herokuapp.com/)
 
