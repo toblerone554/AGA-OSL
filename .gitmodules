@@ -4,3 +4,6 @@
 [submodule "AGA-OSL-rails-app"]
 	path = AGA-OSL-rails-app
 	url = https://github.com/hcarreras/AGA-OSL-rails-app.git
+[submodule "AGA-OSL-Web-App"]
+	path = AGA-OSL-Web-App
+	url = https://github.com/JAntonioMarin/AGA-OSL-Web-App.git
