@@ -236,7 +236,7 @@ Seleccionamos por ejemplo la última tarea #9, y podemos ver un resumen de ésta
 
 ![IMAGEN11](http://i59.tinypic.com/2n8oc5e.jpg)
 
-Vemos gracias a la salida de consola que la tarea ha sido planificada correctamente sin fallos (esfera de color azul), Finished: SUCCES.
+Vemos gracias a la salida de consola que la tarea ha sido planificada correctamente sin fallos (esfera de color azul), Finished: SUCCESS.
 
 ![IMAGEN12](http://i62.tinypic.com/1zdmdl3.jpg)
 
