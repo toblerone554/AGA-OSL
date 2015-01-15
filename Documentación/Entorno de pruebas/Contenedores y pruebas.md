@@ -82,14 +82,32 @@ MUY IMPORTANTE UNA VEZ CREADO EL CONTENEDOR DEBEMOS CONFIGURAR BIEN LA INTERFAZ 
 Donde 10.0.3.251:3000 será la ip del contenedor junto con el puerto del servidor.
 
 # Pruebas unitarias
-Hemos realizado pruebas unitarias al módulo REST:
 
-# Monitorización de la aplicación
 Hemos utilizado [New Relic](http://newrelic.com/sp/brand?utm_source=GOOG&utm_medium=adwords&utm_content=rpm&utm_campaign=RPM&utm_term=NewRelic&mpc=PS-GOOG-RPM-EN-SIGNUP-Europe-Brand-NewRelic-LP3&gclid=Cj0KEQiAzb-kBRDe49qh9s75m-wBEiQATOxgwdPt9jKY8auuF_Y5KoKYNJ6eI_DDrJJmVO91Z-IM_MkaAlK18P8HAQ) para monitorizar la aplicación REST.
 
-New Relic monitorea aplicaciones web y móviles en tiempo real.
+New Relic testea aplicaciones web y móviles en tiempo real.
 
 ![NewRelic](http://i62.tinypic.com/2qs43s6.jpg)
+
+Para testear nuestra aplicación Ruby On Rails, añadimos una nueva aplicación en New Relic.
+
+Escogemos el lenguaje Ruby y generamos la clave de la licencia.
+
+Añadimos la gema a nuestro Gemfile:
+
+````
+gem 'newrelic_rpm'
+````
+
+En el directorio de nuestra aplicación:
+
+````
+bundle install
+````
+
+Y descargamos el archivo newrelic.yml y lo añadimos al directorio de configuración (config):
+
+[Archivo newrelic.yml añadido](https://github.com/hcarreras/AGA-OSL-rails-app/blob/a982918f4213d08cd1426d9ebe250fe774c3b584/config/newrelic.yml)
 
 # Contenedor desplegado
 Una vez instalado y funcionando hace falta instalar todos los componentes necesarios para probar nuestra aplicación.
