@@ -78,23 +78,6 @@ La idea es implementar una API REST que sirva de la funcionalidad necesaria a to
 
 REST API MCV - Ruby On Rails
 
-[API REST - Node.js - Express.js - MongoDB - Mongoose](http://carlosazaustre.es/blog/como-implementar-una-api-rest-con-mongodb-node-js-usando-express-v4/)
-
-[MongoDB](http://es.wikipedia.org/wiki/MongoDB), [express.js](http://blog.solucionex.com/javascript/expressjs-un-framework-para-nodejs), [node.js](http://es.wikipedia.org/wiki/Node.js),
-
-Parte de la aplicación Android:
-
-Integración del codigo QR en la aplicación: para dicha intregación vamos a utilizar ZXing, ya que tambien en un futuro la aplicación podría generar dichos codigos QR e imprimirlos con el movil desde la impresora.
-[GITHUB ZXing](https://github.com/Androideity/Tutorial_ZXingConAndroid)
-
-Tutorial de compilación y uso: 
-
-[Tutorial ZXing](http://androideity.com/2011/11/23/trabajar-con-codigos-qr-en-tus-aplicaciones-android/) 
-
-Para acceder a información de forma remota desde nuestra aplicación lo haremos a través de una petición Android REST. Para ello usaremos la clase especial de tipo genérico "AsyncTask", extendiendo de ella y utilizándola.
-
-[Tutorial Android REST y AsyncTask](http://www.arquitecturajava.com/android-rest-asynctask/)
-
 - - -
 Documento creado por Samuel Hernández Ballesteros a fecha de: 26 de Octubre de 2014.
 
