@@ -19,7 +19,8 @@ Estas aplicaciones de tipo cliente son una página web y una aplicación Android
 
 [Aplicación Android](https://github.com/Samu92/AGA-OSL-Android-App)
 
-La web se desarrollará en el mismo repositorio que el REST.
+[Aplicación Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App)
+[Aplicación Web desplegada en GoogleAppEngine](http://aga-osl-web.appspot.com/)
 
 En la parte de documentación y pruebas tenemos:
 
