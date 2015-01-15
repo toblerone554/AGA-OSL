@@ -87,7 +87,7 @@ Hemos utilizado [New Relic](http://newrelic.com/sp/brand?utm_source=GOOG&utm_med
 
 New Relic testea aplicaciones web y móviles en tiempo real.
 
-![NewRelic](http://i62.tinypic.com/2qs43s6.jpg)
+
 
 Para testear nuestra aplicación Ruby On Rails, añadimos una nueva aplicación en New Relic.
 
@@ -108,6 +108,14 @@ bundle install
 Y descargamos el archivo newrelic.yml y lo añadimos al directorio de configuración (config):
 
 [Archivo newrelic.yml añadido](https://github.com/hcarreras/AGA-OSL-rails-app/blob/a982918f4213d08cd1426d9ebe250fe774c3b584/config/newrelic.yml)
+
+Ya tenemos la aplicación enlazada para los test:
+
+![Aplicacion enlazada](http://i60.tinypic.com/2zhqnmc.png)
+
+Aqui vemos como se enlaza correctamente:
+
+![NewRelic](http://i62.tinypic.com/2qs43s6.jpg)
 
 # Contenedor desplegado
 Una vez instalado y funcionando hace falta instalar todos los componentes necesarios para probar nuestra aplicación.
