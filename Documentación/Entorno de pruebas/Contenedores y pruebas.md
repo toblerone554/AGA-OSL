@@ -13,7 +13,7 @@ Harí Carreras Pérez
 
 - - -
 
-#Contenedor LXC con debian para la aplicación AGA-OSL
+### Contenedor LXC con debian para la aplicación AGA-OSL
 
 El primer paso será crear un "puente" con nuestra interfaz de red. Nos servirá para enjaular aplicaciones y servicios, funcionando como una especie de chroot, pero mucho más versátil.
 
@@ -82,7 +82,7 @@ MUY IMPORTANTE UNA VEZ CREADO EL CONTENEDOR DEBEMOS CONFIGURAR BIEN LA INTERFAZ 
 
 Donde 10.0.3.251:3000 será la ip del contenedor junto con el puerto del servidor.
 
-# Contenedor desplegado
+### Contenedor desplegado
 Una vez instalado y funcionando hace falta instalar todos los componentes necesarios para probar nuestra aplicación.
 
 En nuestro caso para que funcione nuestra aplicación REST instalamos Ruby On Rails con RVM utilizando el siguiente script:
@@ -120,7 +120,7 @@ La ip del lxc-web panel es http://178.62.92.114:5000/
 
 La ip de nuestro contenedor l
 
-# Pruebas unitarias
+### Pruebas unitarias
 
 Hemos utilizado [New Relic](http://newrelic.com/sp/brand?utm_source=GOOG&utm_medium=adwords&utm_content=rpm&utm_campaign=RPM&utm_term=NewRelic&mpc=PS-GOOG-RPM-EN-SIGNUP-Europe-Brand-NewRelic-LP3&gclid=Cj0KEQiAzb-kBRDe49qh9s75m-wBEiQATOxgwdPt9jKY8auuF_Y5KoKYNJ6eI_DDrJJmVO91Z-IM_MkaAlK18P8HAQ) para realizar las pruebas de la aplicación REST.
 
@@ -160,7 +160,7 @@ En el apartado transaction podemos que funciones se han ejecutado en el REST y s
 
 xc debianita que contiene la aplicación REST es http://178.62.92.114:3000/
 
-# Integración Continua
+### Integración Continua
 
 Para la integración continua hemos utilizado Jenkins, siguiendo el siguiente tutorial:
 
