@@ -1,0 +1,19 @@
+#!/bin/bash
+sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion pkg-config
+
+gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
+\curl -sSL https://get.rvm.io | bash -s stable --rails
+
+git clone https://github.com/hcarreras/AGA-OSL-rails-app.git
+
+cd AGA-OSL-rails-app
+
+bundle install
+gem install nokogiri -v '1.6.3.1' -- --use-system-libraries
+bundle install
+	
+curl -sL https://deb.nodesource.com/setup | sudo bash -
+    
+sudo apt-get install -y nodejs
+    
+rails s

@@ -1,4 +1,4 @@
-#Creando un entorno de pruebas con LXC (Linux Containers) para la aplicación AGA-OSL
+#Creando un entorno de pruebas para la aplicación AGA-OSL
 
 **Integrantes actuales:**
 
@@ -13,6 +13,7 @@ Harí Carreras Pérez
 
 - - -
 
+#Contenedor LXC con debian para la aplicación AGA-OSL
 
 El primer paso será crear un "puente" con nuestra interfaz de red. Nos servirá para enjaular aplicaciones y servicios, funcionando como una especie de chroot, pero mucho más versátil.
 
@@ -81,42 +82,6 @@ MUY IMPORTANTE UNA VEZ CREADO EL CONTENEDOR DEBEMOS CONFIGURAR BIEN LA INTERFAZ 
 
 Donde 10.0.3.251:3000 será la ip del contenedor junto con el puerto del servidor.
 
-# Pruebas unitarias
-
-Hemos utilizado [New Relic](http://newrelic.com/sp/brand?utm_source=GOOG&utm_medium=adwords&utm_content=rpm&utm_campaign=RPM&utm_term=NewRelic&mpc=PS-GOOG-RPM-EN-SIGNUP-Europe-Brand-NewRelic-LP3&gclid=Cj0KEQiAzb-kBRDe49qh9s75m-wBEiQATOxgwdPt9jKY8auuF_Y5KoKYNJ6eI_DDrJJmVO91Z-IM_MkaAlK18P8HAQ) para realizar las pruebas de la aplicación REST.
-
-New Relic testea aplicaciones web y móviles en tiempo real.
-
-
-
-Para testear nuestra aplicación Ruby On Rails, añadimos una nueva aplicación en New Relic.
-
-Escogemos el lenguaje Ruby y generamos la clave de la licencia.
-
-Añadimos la gema a nuestro Gemfile:
-
-````
-gem 'newrelic_rpm'
-````
-
-En el directorio de nuestra aplicación:
-
-````
-bundle install
-````
-
-Y descargamos el archivo newrelic.yml y lo añadimos al directorio de configuración (config):
-
-[Archivo newrelic.yml añadido](https://github.com/hcarreras/AGA-OSL-rails-app/blob/a982918f4213d08cd1426d9ebe250fe774c3b584/config/newrelic.yml)
-
-Ya tenemos la aplicación enlazada para los test:
-
-![Aplicacion enlazada](http://i60.tinypic.com/2zhqnmc.png)
-
-Aqui vemos como se enlaza correctamente:
-
-![NewRelic](http://i62.tinypic.com/2qs43s6.jpg)
-
 # Contenedor desplegado
 Una vez instalado y funcionando hace falta instalar todos los componentes necesarios para probar nuestra aplicación.
 
@@ -153,7 +118,47 @@ Tenemos una máquina virtual para pruebas que está ubicada en la nube corriendo
 
 La ip del lxc-web panel es http://178.62.92.114:5000/
 
-La ip de nuestro contenedor lxc debianita que contiene la aplicación REST es http://178.62.92.114:3000/
+La ip de nuestro contenedor l
+
+# Pruebas unitarias
+
+Hemos utilizado [New Relic](http://newrelic.com/sp/brand?utm_source=GOOG&utm_medium=adwords&utm_content=rpm&utm_campaign=RPM&utm_term=NewRelic&mpc=PS-GOOG-RPM-EN-SIGNUP-Europe-Brand-NewRelic-LP3&gclid=Cj0KEQiAzb-kBRDe49qh9s75m-wBEiQATOxgwdPt9jKY8auuF_Y5KoKYNJ6eI_DDrJJmVO91Z-IM_MkaAlK18P8HAQ) para realizar las pruebas de la aplicación REST.
+
+New Relic testea aplicaciones web y móviles en tiempo real.
+
+
+
+Para testear nuestra aplicación Ruby On Rails, añadimos una nueva aplicación en New Relic.
+
+Escogemos el lenguaje Ruby y generamos la clave de la licencia.
+
+Añadimos la gema a nuestro Gemfile:
+
+````
+gem 'newrelic_rpm'
+````
+
+En el directorio de nuestra aplicación:
+
+````
+bundle install
+````
+
+Y descargamos el archivo newrelic.yml y lo añadimos al directorio de configuración (config):
+
+[Archivo newrelic.yml añadido](https://github.com/hcarreras/AGA-OSL-rails-app/blob/a982918f4213d08cd1426d9ebe250fe774c3b584/config/newrelic.yml)
+
+Ya tenemos la aplicación enlazada para los test:
+
+![Aplicacion enlazada](http://i58.tinypic.com/2ajuom9.jpg)
+
+Aqui vemos como se enlaza correctamente:
+
+![NewRelic](http://i62.tinypic.com/20kdmhl.jpg)
+
+En el apartado transaction podemos que funciones se han ejecutado en el REST y su tiempo de respuesta.
+
+xc debianita que contiene la aplicación REST es http://178.62.92.114:3000/
 
 # Integración Continua
 
@@ -265,36 +270,6 @@ Para configurar nuestro proyecto, nos logueamos en Jenkins, seleccionamos dicho 
 Pulsamos sobre Aplicar los cambios y Guardar.
 
 ![IMAGEN16](http://i57.tinypic.com/2gw5cvk.jpg)
-
-# Qué tenemos hasta ahora
-A día de hoy tenemos desarollada una primera versión de la aplicación REST realizada con Ruby On Rails que permite acceder y obtener información de una hoja de cálculo ubicada en una cuenta de Google Docs.
-
-[Repositorio de la aplicación REST Ruby On Rails](https://github.com/hcarreras/AGA-OSL-rails-app)
-
-[Aplicación desplegada](http://aga-osl.herokuapp.com/)
-
-También estamos desarrollando dos aplicaciones de tipo cliente que interactuarán con esta aplicación haciendo uso de la información que reciban.
-
-Estas aplicaciones de tipo cliente son una página web y una aplicación Android que tendrá la funcionalidad de trabajar con códigos QR.
-
-[Aplicación Android](https://github.com/Samu92/AGA-OSL-Android-App)
-
-La web se desarrollará en el mismo repositorio que el REST.
-
-En la parte de documentación y pruebas tenemos:
-
-**Documentación:**
-
-[Explicación del proyecto v1.0](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20proyecto%20de%20gesti%C3%B3n%20automatizada%20de%20almac%C3%A9n%20de%20reciclaje.md)
-
-[Presentación v1.0](https://github.com/Samu92/AGA-OSL/tree/master/Documentaci%C3%B3n/Presentaci%C3%B3n)
-
-**Contenedores:**
-
-[Contenedor debianita que contiene REST Ruby On Rails - Documentación](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
-
-[Contenedor desplegado](http://178.62.92.114:3000/) ARREGLAR
-
 
 
 
