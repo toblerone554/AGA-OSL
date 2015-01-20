@@ -45,6 +45,10 @@ Hemos utilizado [New Relic](http://newrelic.com/sp/brand?utm_source=GOOG&utm_med
 
 [Documentación de los test realizados](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
 
+**Integración continua**
+
+[Jenkins](http://178.62.92.114:8080/)
+
 ------------------------------------------------
 
 Documento de google docs para organización del proyecto
