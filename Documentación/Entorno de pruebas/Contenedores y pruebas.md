@@ -271,7 +271,7 @@ Pulsamos sobre Aplicar los cambios y Guardar.
 
 ![IMAGEN16](http://i57.tinypic.com/2gw5cvk.jpg)
 
-Acceder a Jenkins de nuestro proyecto: http://178.62.92.114:8080/
+Acceder a Jenkins de nuestro proyecto: http://178.62.92.114:8888/
 
 
 
