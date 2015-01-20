@@ -118,7 +118,7 @@ Tenemos una máquina virtual para pruebas que está ubicada en la nube corriendo
 
 La ip del lxc-web panel es http://178.62.92.114:5000/
 
-La ip de nuestro contenedor l
+La ip para acceder al contenedor de pruebas con la aplicación desplegada http://178.62.92.114:3000/
 
 ### Pruebas unitarias
 
