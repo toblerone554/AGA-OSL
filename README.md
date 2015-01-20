@@ -37,7 +37,7 @@ En la parte de documentación y pruebas tenemos:
 
 [Contenedor LXC debianita que contiene REST Ruby On Rails - Documentación](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
 
-[Contenedor desplegado](http://178.62.92.114:3000/)
+[Contenedor desplegado](http://178.62.117.12:3000/)
 
 **Tests y Pruebas**
 
@@ -47,7 +47,7 @@ Hemos utilizado [New Relic](http://newrelic.com/sp/brand?utm_source=GOOG&utm_med
 
 **Integración continua**
 
-[Jenkins](http://178.62.92.114:8080/)
+[Jenkins](http://178.62.117.12:8080//)
 
 ------------------------------------------------
 
