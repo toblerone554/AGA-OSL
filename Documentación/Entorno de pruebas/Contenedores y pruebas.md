@@ -161,6 +161,10 @@ En el apartado transaction podemos que funciones se han ejecutado en el REST y s
 
 xc debianita que contiene la aplicación REST es http://178.62.92.114:3000/
 
+### TEST Realizados a las diferentes aplicaciones
+
+Ahora mismo no tenemos test
+
 ### Integración Continua
 
 Para la integración continua hemos utilizado Jenkins, siguiendo el siguiente tutorial:
