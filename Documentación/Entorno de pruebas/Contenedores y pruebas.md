@@ -102,6 +102,7 @@ En nuestro caso para que funcione nuestra aplicación REST instalamos Ruby On Ra
 
     #Instalamos las gemas necesarias
     bundle install
+    sudo apt-get install libxslt-dev libxml2-dev
     gem install nokogiri -v '1.6.3.1' -- --use-system-libraries
     bundle install
 	
