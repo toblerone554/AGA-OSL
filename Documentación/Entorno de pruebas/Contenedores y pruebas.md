@@ -116,7 +116,7 @@ En nuestro caso para que funcione nuestra aplicación REST instalamos Ruby On Ra
 
 Tenemos una máquina virtual para pruebas que está ubicada en la nube corriendo bajo Ubuntu 14.04.
 
-La ip del lxc-web panel es http://178.62.92.114:5000/
+La ip del lxc-web panel es http://178.62.117.12:5000/
 
 La ip para acceder al contenedor de pruebas con la aplicación desplegada http://178.62.92.114:3000/
 
