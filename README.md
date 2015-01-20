@@ -47,7 +47,7 @@ Hemos utilizado [New Relic](http://newrelic.com/sp/brand?utm_source=GOOG&utm_med
 
 **Integración continua**
 
-[Jenkins](http://178.62.92.114:8888/)
+[Jenkins](http://178.62.92.114:8080/)
 
 ------------------------------------------------
 
