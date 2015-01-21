@@ -55,8 +55,6 @@ Aqui vemos como se enlaza correctamente:
 
 En el apartado transaction podemos que funciones se han ejecutado en el REST y su tiempo de respuesta.
 
-xc debianita que contiene la aplicación REST es http://178.62.92.114:3000/
-
 ### TEST Realizados a las diferentes aplicaciones
 
 Ahora mismo no tenemos test
