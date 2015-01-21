@@ -62,6 +62,8 @@ Como actualizar los submodulos
   git submodule update
   
   git submodule foreach git pull origin master
+  
+  git add *
 
 Y hacemos commit y push
 
