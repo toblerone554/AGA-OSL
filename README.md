@@ -57,9 +57,9 @@ Documento de google docs para organización del proyecto
 
 Como actualizar los submodulos
 
-git submodule init
-git submodule update
-git submodule foreach git pull origin master
+  git submodule init
+  git submodule update
+  git submodule foreach git pull origin master
 
 Y hacemos commit y push
 
