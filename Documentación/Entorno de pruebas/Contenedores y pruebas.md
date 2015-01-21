@@ -102,6 +102,7 @@ En nuestro caso para que funcione nuestra aplicación REST instalamos Ruby On Ra
 
     #Instalamos las gemas necesarias
     bundle install
+    sudo apt-get install libxslt-dev libxml2-dev
     gem install nokogiri -v '1.6.3.1' -- --use-system-libraries
     bundle install
 	
@@ -116,9 +117,9 @@ En nuestro caso para que funcione nuestra aplicación REST instalamos Ruby On Ra
 
 Tenemos una máquina virtual para pruebas que está ubicada en la nube corriendo bajo Ubuntu 14.04.
 
-La ip del lxc-web panel es http://178.62.92.114:5000/
+La ip del lxc-web panel es http://178.62.117.12:5000/
 
-La ip de nuestro contenedor l
+La ip para acceder al contenedor de pruebas con la aplicación desplegada http://178.62.117.12:3000/
 
 ### Pruebas unitarias
 
@@ -159,6 +160,10 @@ Aqui vemos como se enlaza correctamente:
 En el apartado transaction podemos que funciones se han ejecutado en el REST y su tiempo de respuesta.
 
 xc debianita que contiene la aplicación REST es http://178.62.92.114:3000/
+
+### TEST Realizados a las diferentes aplicaciones
+
+Ahora mismo no tenemos test
 
 ### Integración Continua
 
@@ -270,6 +275,8 @@ Para configurar nuestro proyecto, nos logueamos en Jenkins, seleccionamos dicho 
 Pulsamos sobre Aplicar los cambios y Guardar.
 
 ![IMAGEN16](http://i57.tinypic.com/2gw5cvk.jpg)
+
+Acceder a Jenkins de nuestro proyecto: http://178.62.117.12:8080/
 
 
 
