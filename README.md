@@ -55,7 +55,7 @@ Hemos realizado test para comprobar el buen funcionamiento de las aplicaciones
 Documento de google docs para organización del proyecto
 [Correciones](https://docs.google.com/document/d/1aY6bwWLNVAhc91OPJflwDRFZ9RhVMzVc0_Z6UXUpZZ8/edit)
 
-Como actualizar los submodulos
+####Como actualizar los submodulos
 
   git submodule init
   
@@ -63,7 +63,7 @@ Como actualizar los submodulos
   
   git submodule foreach git pull origin master
   
-  git add *
+  git add * 
 
 Y hacemos commit y push
 
