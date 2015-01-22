@@ -33,7 +33,7 @@ En la parte de documentación y pruebas tenemos:
 
 **Contenedores**
 
-[Documentación](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+[Documentación - Apartado de contenedores](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
 
 **Tests y Pruebas**
 
@@ -44,7 +44,7 @@ Hemos realizado test para comprobar el buen funcionamiento de las aplicaciones
 - Android:
 - PHP:
 
-[Documentación de los test realizados](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+[Documentación - Apartado de test y pruebas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
 
 **Integración continua**
 
