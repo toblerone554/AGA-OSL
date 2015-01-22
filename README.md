@@ -51,7 +51,6 @@ Hemos realizado test para comprobar el buen funcionamiento de las aplicaciones
 [Jenkins](http://178.62.117.12:8080//)
 
 ------------------------------------------------
-
 Documento de google docs para organización del proyecto
 [Correciones](https://docs.google.com/document/d/1aY6bwWLNVAhc91OPJflwDRFZ9RhVMzVc0_Z6UXUpZZ8/edit)
 
