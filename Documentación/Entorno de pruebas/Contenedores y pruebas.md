@@ -172,6 +172,143 @@ Pulsamos sobre Aplicar los cambios y Guardar.
 
 Acceder a Jenkins de nuestro proyecto: http://178.62.117.12:8080/
 
+### Provisionamiento
+
+Hemos utilizado Vagrant, una herramienta para configurar automáticamente un entorno de desarrollo dentro de una máquina virtual en el ordenador. Esto sirve para que el entorno de desarrollo pueda coincidir exactamente con el servidor de producción y todos los compañeros del proyecto puedan ejecutar exactamente el mismo software.
+
+En nuestro caso hemos utilizado Vagrant para el desarrollo de Rails, en cuestión de minutos podremos tener en marcha nuestro proyecto.
+
+También hemos utilizado Chef que nos ayuda a automatizar como nuestro entorno de desarrollo de la máquina virtual obtiene la configuración. Éste se hará cargo de la creación de Ruby y todos los demás paquetes en nuestro sistema.
+
+En nuestra máquina virtual en Digital Ocean hemos seguido los siguientes pasos para configurar el provisionamiento:
+
+Primero hemos instalado Vagrant y Virtualbox
+
+	sudo add-apt-repository multiverse
+	sudo apt-get update
+	sudo apt-get install virtualbox
+
+	sudo apt-get install vagrant
+
+Después instalamos los siguientes plugins de vagrant
+
+	vagrant plugin install vagrant-vbguest
+
+Este plugin instala automaticamente el host de VirtualBox Guest Addition en el sistema invitado.
+
+	vagrant plugin install vagrant-librarian-chef
+
+Este automaticamente inicia chef cuando encendemos nuestra máquina.
+
+Ahora creamos el config de Vagrant, para ello hemos entrado en el directorio de nuestro proyecto y hemos ejecutado lo siguiente:
+
+	vagrant init
+
+    touch Cheffile
+
+Estos comandos generan los archivos Vagrantfile y Cheffile que habrá que configurar.
+
+
+**Fichero Cheffile**
+
+Este fichero es igual que el fichero Gemfile que tenemos en nuestro proyecto Rails para indicar las gemas que se usan pero para Chef. Este fichero define las recetas de cocina del Chef que utilizaremos en nuestro proyecto.
+
+Más tarde en el VagrantFile le diremos a Vagrant cómo utilizar las recetas para configurar nuestro entorno.
+
+En nuestro Cheffile tenemos:
+
+```
+site  "http://community.opscode.com/api/v1"
+
+cookbook 'apt'
+cookbook 'build-essential'
+cookbook 'ruby_build'
+cookbook 'nodejs', git: 'https://github.com/mdxp/nodejs-cookbook'
+cookbook 'rbenv', git: 'https://github.com/fnichol/chef-rbenv'
+cookbook 'vim'
+```
+
+**Fichero Vagrantfile**
+
+Nuestro Vagrantfile define el sistema operativo y la configuración Chef para nuestra máquina virtual.
+
+Utilizamos Ubuntu 14.04 de 64 bits, utilizamos el puerto 3000 de la máquina virtual, cuando ejecutemos nuestro servidor rails podremos acceder desde nuestro navegador.
+
+Nuestro VagrantFile
+
+```
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  # Use Ubuntu 14.04 Trusty Tahr 64-bit as our operating system
+  config.vm.box = "ubuntu/trusty64"
+
+  # Configurate the virtual machine to use 1GB of RAM
+  config.vm.provider :virtualbox do |vb|
+    vb.customize ["modifyvm", :id, "--memory", "1024"]
+  end
+
+  # Forward the Rails server default port to the host
+  config.vm.network :forwarded_port, guest: 3000, host: 3000
+
+  # Use Chef Solo to provision our virtual machine
+  config.vm.provision :chef_solo do |chef|
+    chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
+
+    chef.add_recipe "apt"
+    chef.add_recipe "nodejs"
+    chef.add_recipe "ruby_build"
+    chef.add_recipe "rbenv::user"
+    chef.add_recipe "rbenv::vagrant"
+    chef.add_recipe "vim"
+
+    # Install Ruby 2.1.3 and Bundler
+    chef.json = {
+      rbenv: {
+        user_installs: [{
+          user: 'vagrant',
+          rubies: ["2.1.3"],
+          global: "2.1.3",
+          gems: {
+            "2.1.3" => [
+              { name: "bundler" }
+            ]
+          }
+        }]
+      },
+    }
+  end
+end
+```
+
+Ahora que tenemos Vagrant y Chef configurados correctamente, vamos a arrancar la máquina virtual Vagrant y entrar por ssh en ella.
+
+La primera vez que ejecutamos vagrant tomará un tiempo, ya que aprovisionará la máquina virtual con la configuración chef. Después de la primera vez, vagrant no tendrá que ejecutar chef y se iniciará mucho más rápido.
+
+Si alguna vez se edita el Vagrantfile o Cheffile ,se puede utilizar el siguiente comando para volver a configurar la máquina.
+
+	vagrant provision
+
+Vagrant configura la carpeta vagrant / como un directorio compartido entre la máquina virtual y el sistema operativo host. Si ejecutamos, vagrant cd / y ejecutamos ls podremos ver todos los archivos de nuestra aplicación Rails.
+
+Aquí, podemos ejecutar bundle para instalar todas las gemas como solemos hacer normalmente.
+
+Desde este directorio podemos hacer rails server para ejecutar nuestro servidor rails en el puerto 3000.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
