@@ -23,8 +23,6 @@ Hemos utilizado [New Relic](http://newrelic.com/sp/brand?utm_source=GOOG&utm_med
 
 New Relic testea aplicaciones web y móviles en tiempo real.
 
-
-
 Para testear nuestra aplicación Ruby On Rails, añadimos una nueva aplicación en New Relic.
 
 Escogemos el lenguaje Ruby y generamos la clave de la licencia.
@@ -67,7 +65,7 @@ Para la integración continua hemos utilizado Jenkins, siguiendo el siguiente tu
 
 Jenkins además de ser open source, ejecuta la batería de test de nuestros proyectos en un entorno independiente, archiva los resultados de cada build y genera estadísticas.
 
-Tenemos una máquina virtual en la nube (Digital Ocean), con RoR instalado y con Jenkins funcionando bajo nuestro repositorio en Github. 
+Tenemos una máquina virtual en la nube (Digital Ocean), con RoR instalado y con Jenkins funcionando bajo nuestro repositorio en Github.
 
 Para utilizarlo lo que hemos hecho ha sido lo siguiente:
 
@@ -157,8 +155,8 @@ Para configurar nuestro proyecto, nos logueamos en Jenkins, seleccionamos dicho 
 * En Ejecutar, hacemos click en el desplegable 'Añadir un nuevo paso' y elegimos 'Ejecutar linea de comandos (shell)', en la que añadimos:
 
 ```bash
-    source /var/lib/jenkins/.bashrc 
-    bundle install 
+    source /var/lib/jenkins/.bashrc
+    bundle install
     cp /var/lib/jenkins/conf_projects/nombre_proyecto/database.yml config/database.yml
     rake
 ```
@@ -235,6 +233,7 @@ Nuestro Vagrantfile define el sistema operativo y la configuración Chef para nu
 Utilizamos Ubuntu 14.04 de 64 bits, utilizamos el puerto 3000 de la máquina virtual, cuando ejecutemos nuestro servidor rails podremos acceder desde nuestro navegador.
 
 Nuestro VagrantFile
+
 
 ```
 # -*- mode: ruby -*-

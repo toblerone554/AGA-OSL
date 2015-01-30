@@ -35,7 +35,7 @@ En la parte de documentación y pruebas tenemos:
 
 DockerHub
 
-[Documentación - Apartado de contenedores](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+[Documentación - Apartado de contenedores](https://github.com/Samu92/AGA-OSL/tree/master/Documentaci%C3%B3n/Presentaci%C3%B3n)
 
 **Tests y Pruebas**
 
@@ -44,21 +44,21 @@ Hemos utilizado [New Relic](http://newrelic.com/sp/brand?utm_source=GOOG&utm_med
 Hemos realizado test para comprobar el buen funcionamiento de las aplicaciones
 - RoR: Test::Unit
 - Android:
-- PHP:
+- PHP: [SimpleTest](http://aga-osl-web.appspot.com/phpUnit.php)
 
-[Documentación - Apartado de test y pruebas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+[Documentación - Apartado de test y pruebas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
 
 **Integración continua**
 
 [Jenkins - Interfaz](http://178.62.92.114:8080/)
 
-[Documentación - Apartado de integración continua](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+[Documentación - Apartado de integración continua](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
 
 **Provisionamiento**
 
 Vagrant y Chef con Rails
 
-[Documentación - Apartado de provisionamiento](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+[Documentación - Apartado de provisionamiento](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.mdci%C3%B3n)
 
 ------------------------------------------------
 
@@ -88,34 +88,36 @@ Juan Antonio Marín Sanchez
 - [ ] [Presentación del proyecto]()
 - [ ] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
 
+
 - Ha participado en estos scripts de provisionamiento
-- [ ] [Script]()
-- [ ] [Script]()
-- [ ] [Script]()
-- [ ] [Script]()
+- [ ] [Vagrantfile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Vagrantfile)
+- [ ] [Cheffile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Cheffile)
+
 
 - Ha participado en estos tests (o issues)
-- [ ] [Test]()
-- [ ] [Test]()
-- [ ] [Test]()
-- [ ] [Test]()
-- [ ] [Test]()
+- [ ] [Test - SimpleTest PHP para la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App/tree/master/simpletest)
+- [ ] [Test - Test de Rails]()
+- [ ] [Test - Test de Android]()
+- [ ] [Definiendo el REST](https://github.com/Samu92/AGA-OSL/issues/14)
+- [ ] [Conectar con la API Google Drive](https://github.com/Samu92/AGA-OSL/issues/4)
+- [ ] [Urgente - Correciones](https://github.com/Samu92/AGA-OSL/issues/15)
+
 
 - Ha participado en esta integración continua y PaaS
-- [ ] [Integracion]()
-- [ ] [Integracion]()
-- [ ] [Integracion]()
-- [ ] [Integracion]()
+- [ ] [Jenkins en Digital Ocean Droplet](http://178.62.92.114:8080/)
+- [ ] [Documentación - Parte de integración continua](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
+
 
 - Ha participado en esta configuración de despliegue automático
-- [ ] [Despliegue]()
-- [ ] [Despliegue]()
-- [ ] [Despliegue]()
+- [ ] [Heroku - Aplicación Rails]()
+- [ ] [AppSpot - Web]()
+- [ ] [Script de despliegue]()
+
 
 - Ha participado en el desarrollo del proyecto
-- [ ] [Desarrollo]()
-- [ ] [Desarrollo]()
-- [ ] [Desarrollo]()
+- [ ] [Desarrollo de la Web]()
+- [ ] [Desarrollo del REST RoR]()
+- [ ] [Desarrollo de la aplicación Android]()
 
 
 Pablo Perez Ruíz
@@ -124,66 +126,77 @@ Pablo Perez Ruíz
 - [ ] [Presentación del proyecto]()
 - [ ] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
 
-- Ha participado en estos scripts de provisionamiento
-- [ ] [Script]()
-- [ ] [Script]()
-- [ ] [Script]()
-- [ ] [Script]()
-
-- Ha participado en estos tests (o issues)
-- [ ] [Test]()
-- [ ] [Test]()
-- [ ] [Test]()
-- [ ] [Test]()
-- [ ] [Test]()
-
-- Ha participado en esta integración continua y PaaS
-- [ ] [Integracion]()
-- [ ] [Integracion]()
-- [ ] [Integracion]()
-- [ ] [Integracion]()
-
-- Ha participado en esta configuración de despliegue automático
-- [ ] [Despliegue]()
-- [ ] [Despliegue]()
-- [ ] [Despliegue]()
-
-- Ha participado en el desarrollo del proyecto
-- [ ] [Desarrollo]()
-- [ ] [Desarrollo]()
-- [ ] [Desarrollo]()
-
-
-Samuel Hernández Ballesteros
-- Ha participado en la documentación
-- [ ] [Descripción del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
-- [ ] [Presentación del proyecto]()
-- [ ] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
 
 - Ha participado en estos scripts de provisionamiento
-- [ ] [Vagrantfile]()
-- [ ] [Cheffile]()
+- [ ] [Vagrantfile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Vagrantfile)
+- [ ] [Cheffile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Cheffile)
+
 
 - Ha participado en estos tests (o issues)
-- [ ] [Test]()
-- [ ] [Test]()
-- [ ] [Test]()
-- [ ] [Test]()
-- [ ] [Test]()
+- [ ] [Test - SimpleTest PHP para la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App/tree/master/simpletest)
+- [ ] [Test - Test de Rails]()
+- [ ] [Test - Test de Android]()
+- [ ] [Definiendo el REST](https://github.com/Samu92/AGA-OSL/issues/14)
+- [ ] [Conectar con la API Google Drive](https://github.com/Samu92/AGA-OSL/issues/4)
+- [ ] [Urgente - Correciones](https://github.com/Samu92/AGA-OSL/issues/15)
+
 
 - Ha participado en esta integración continua y PaaS
 - [ ] [Jenkins en Digital Ocean Droplet](http://178.62.92.114:8080/)
-- [ ] [Documentación - Parte de integración continua]()
+- [ ] [Documentación - Parte de integración continua](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
+
 
 - Ha participado en esta configuración de despliegue automático
-- [ ] [Despliegue]()
-- [ ] [Despliegue]()
-- [ ] [Despliegue]()
+- [ ] [Heroku - Aplicación Rails]()
+- [ ] [AppSpot - Web]()
+- [ ] [Script de despliegue]()
+
 
 - Ha participado en el desarrollo del proyecto
-- [ ] [Desarrollo]()
-- [ ] [Desarrollo]()
-- [ ] [Desarrollo]()
+- [ ] [Desarrollo de la Web]()
+- [ ] [Desarrollo del REST RoR]()
+- [ ] [Desarrollo de la aplicación Android]()
+
+
+Samuel Hernández Ballesteros
+
+
+- Ha participado en la documentación
+- [x] [Descripción del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
+- [x] [Presentación del proyecto]()
+- [x] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+
+
+- Ha participado en estos scripts de provisionamiento
+- [x] [Vagrantfile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Vagrantfile)
+- [x] [Cheffile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Cheffile)
+
+
+- Ha participado en estos tests (o issues)
+- [ ] [Test - SimpleTest PHP para la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App/tree/master/simpletest)
+- [ ] [Test - Test de Rails]()
+- [x] [Test - Test de Android]()
+- [x] [Definiendo el REST](https://github.com/Samu92/AGA-OSL/issues/14)
+- [x] [Conectar con la API Google Drive](https://github.com/Samu92/AGA-OSL/issues/4)
+- [x] [Urgente - Correciones](https://github.com/Samu92/AGA-OSL/issues/15)
+
+
+- Ha participado en esta integración continua y PaaS
+- [x] [Jenkins en Digital Ocean Droplet](http://178.62.92.114:8080/)
+- [x] [Documentación - Parte de integración continua](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
+
+
+- Ha participado en esta configuración de despliegue automático
+- [ ] [Heroku - Aplicación Rails]()
+- [ ] [AppSpot - Web]()
+- [ ] [Script de despliegue]()
+
+
+- Ha participado en el desarrollo del proyecto
+- [ ] [Desarrollo de la Web]()
+- [ ] [Desarrollo del REST RoR]()
+- [x] [Desarrollo de la aplicación Android]()
+
 
 Harí Carreras Pérez
 - Ha participado en la documentación
@@ -191,33 +204,35 @@ Harí Carreras Pérez
 - [ ] [Presentación del proyecto]()
 - [ ] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
 
+
 - Ha participado en estos scripts de provisionamiento
-- [ ] [Script]()
-- [ ] [Script]()
-- [ ] [Script]()
-- [ ] [Script]()
+- [ ] [Vagrantfile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Vagrantfile)
+- [ ] [Cheffile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Cheffile)
+
 
 - Ha participado en estos tests (o issues)
-- [ ] [Test]()
-- [ ] [Test]()
-- [ ] [Test]()
-- [ ] [Test]()
-- [ ] [Test]()
+- [ ] [Test - SimpleTest PHP para la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App/tree/master/simpletest)
+- [ ] [Test - Test de Rails]()
+- [ ] [Test - Test de Android]()
+- [ ] [Definiendo el REST](https://github.com/Samu92/AGA-OSL/issues/14)
+- [ ] [Conectar con la API Google Drive](https://github.com/Samu92/AGA-OSL/issues/4)
+- [ ] [Urgente - Correciones](https://github.com/Samu92/AGA-OSL/issues/15)
+
 
 - Ha participado en esta integración continua y PaaS
-- [ ] [Integracion]()
-- [ ] [Integracion]()
-- [ ] [Integracion]()
-- [ ] [Integracion]()
+- [ ] [Jenkins en Digital Ocean Droplet](http://178.62.92.114:8080/)
+- [ ] [Documentación - Parte de integración continua](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
+
 
 - Ha participado en esta configuración de despliegue automático
-- [ ] [Despliegue]()
-- [ ] [Despliegue]()
-- [ ] [Despliegue]()
+- [ ] [Heroku - Aplicación Rails]()
+- [ ] [AppSpot - Web]()
+- [ ] [Script de despliegue]()
+
 
 - Ha participado en el desarrollo del proyecto
-- [ ] [Desarrollo]()
-- [ ] [Desarrollo]()
-- [ ] [Desarrollo]()
+- [ ] [Desarrollo de la Web]()
+- [ ] [Desarrollo del REST RoR]()
+- [ ] [Desarrollo de la aplicación Android]()
 
 
