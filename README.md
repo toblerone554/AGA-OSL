@@ -33,6 +33,8 @@ En la parte de documentación y pruebas tenemos:
 
 **Contenedores**
 
+DockerHub
+
 [Documentación - Apartado de contenedores](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
 
 **Tests y Pruebas**
@@ -48,21 +50,158 @@ Hemos realizado test para comprobar el buen funcionamiento de las aplicaciones
 
 **Integración continua**
 
-[Jenkins](http://178.62.117.12:8080//)
+[Jenkins - Interfaz](http://178.62.92.114:8080/)
+
+[Documentación - Apartado de integración continua](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+
+**Provisionamiento**
+
+Vagrant y Chef con Rails
+
+[Documentación - Apartado de provisionamiento](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
 
 ------------------------------------------------
+
+**Extras**
+
 Documento de google docs para organización del proyecto
 [Correciones](https://docs.google.com/document/d/1aY6bwWLNVAhc91OPJflwDRFZ9RhVMzVc0_Z6UXUpZZ8/edit)
 
 **Como actualizar los submodulos**
 
-  git submodule init
-  
-  git submodule update
-  
-  git submodule foreach git pull origin master
-  
-  git add * 
+	git submodule init
 
-Y hacemos commit y push
+	git submodule update
+  
+	git submodule foreach git pull origin master
+  
+	git add * 
+
+	commit y push
+
+------------------------------------------------
+**Participación**
+
+Juan Antonio Marín Sanchez
+- Ha participado en la documentación
+- [ ] [Descripción del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
+- [ ] [Presentación del proyecto]()
+- [ ] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+- Ha participado en estos scripts de provisionamiento
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- Ha participado en estos tests (o issues)
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- Ha participado en esta integración continua y PaaS
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- Ha participado en esta configuración de despliegue automático
+- [ ][]()
+- [ ][]()
+- [ ][]()
+- Ha participado en el desarrollo del proyecto
+- [ ][]()
+- [ ][]()
+- [ ][]()
+
+
+Pablo Perez Ruíz
+- Ha participado en la documentación
+- [ ] [Descripción del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
+- [ ] [Presentación del proyecto]()
+- [ ] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+- Ha participado en estos scripts de provisionamiento
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- Ha participado en estos tests (o issues)
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- Ha participado en esta integración continua y PaaS
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- Ha participado en esta configuración de despliegue automático
+- [ ][]()
+- [ ][]()
+- [ ][]()
+- Ha participado en el desarrollo del proyecto
+- [ ][]()
+- [ ][]()
+- [ ][]()
+
+
+Samuel Hernández Ballesteros
+- Ha participado en la documentación
+- [ ] [Descripción del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
+- [ ] [Presentación del proyecto]()
+- [ ] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+- Ha participado en estos scripts de provisionamiento
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- Ha participado en estos tests (o issues)
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- Ha participado en esta integración continua y PaaS
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- Ha participado en esta configuración de despliegue automático
+- [ ][]()
+- [ ][]()
+- [ ][]()
+- Ha participado en el desarrollo del proyecto
+- [ ][]()
+- [ ][]()
+- [ ][]()
+
+Harí Carreras Pérez
+- Ha participado en la documentación
+- [ ] [Descripción del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
+- [ ] [Presentación del proyecto]()
+- [ ] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+- Ha participado en estos scripts de provisionamiento
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- Ha participado en estos tests (o issues)
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- Ha participado en esta integración continua y PaaS
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- [ ] []()
+- Ha participado en esta configuración de despliegue automático
+- [ ][]()
+- [ ][]()
+- [ ][]()
+- Ha participado en el desarrollo del proyecto
+- [ ][]()
+- [ ][]()
+- [ ][]()
+
 
