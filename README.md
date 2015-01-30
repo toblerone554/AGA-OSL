@@ -87,26 +87,31 @@ Juan Antonio Marín Sanchez
 - [ ] [Descripción del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
 - [ ] [Presentación del proyecto]()
 - [ ] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+
 - Ha participado en estos scripts de provisionamiento
 - [ ] [Script]()
 - [ ] [Script]()
 - [ ] [Script]()
 - [ ] [Script]()
+
 - Ha participado en estos tests (o issues)
 - [ ] [Test]()
 - [ ] [Test]()
 - [ ] [Test]()
 - [ ] [Test]()
 - [ ] [Test]()
+
 - Ha participado en esta integración continua y PaaS
 - [ ] [Integracion]()
 - [ ] [Integracion]()
 - [ ] [Integracion]()
 - [ ] [Integracion]()
+
 - Ha participado en esta configuración de despliegue automático
 - [ ] [Despliegue]()
 - [ ] [Despliegue]()
 - [ ] [Despliegue]()
+
 - Ha participado en el desarrollo del proyecto
 - [ ] [Desarrollo]()
 - [ ] [Desarrollo]()
@@ -118,26 +123,31 @@ Pablo Perez Ruíz
 - [ ] [Descripción del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
 - [ ] [Presentación del proyecto]()
 - [ ] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+
 - Ha participado en estos scripts de provisionamiento
 - [ ] [Script]()
 - [ ] [Script]()
 - [ ] [Script]()
 - [ ] [Script]()
+
 - Ha participado en estos tests (o issues)
 - [ ] [Test]()
 - [ ] [Test]()
 - [ ] [Test]()
 - [ ] [Test]()
 - [ ] [Test]()
+
 - Ha participado en esta integración continua y PaaS
 - [ ] [Integracion]()
 - [ ] [Integracion]()
 - [ ] [Integracion]()
 - [ ] [Integracion]()
+
 - Ha participado en esta configuración de despliegue automático
 - [ ] [Despliegue]()
 - [ ] [Despliegue]()
 - [ ] [Despliegue]()
+
 - Ha participado en el desarrollo del proyecto
 - [ ] [Desarrollo]()
 - [ ] [Desarrollo]()
@@ -149,26 +159,31 @@ Samuel Hernández Ballesteros
 - [ ] [Descripción del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
 - [ ] [Presentación del proyecto]()
 - [ ] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+
 - Ha participado en estos scripts de provisionamiento
 - [ ] [Script]()
 - [ ] [Script]()
 - [ ] [Script]()
 - [ ] [Script]()
+
 - Ha participado en estos tests (o issues)
 - [ ] [Test]()
 - [ ] [Test]()
 - [ ] [Test]()
 - [ ] [Test]()
 - [ ] [Test]()
+
 - Ha participado en esta integración continua y PaaS
 - [ ] [Integracion]()
 - [ ] [Integracion]()
 - [ ] [Integracion]()
 - [ ] [Integracion]()
+
 - Ha participado en esta configuración de despliegue automático
 - [ ][Despliegue]()
 - [ ][Despliegue]()
 - [ ][Despliegue]()
+
 - Ha participado en el desarrollo del proyecto
 - [ ][Desarrollo]()
 - [ ][Desarrollo]()
@@ -179,26 +194,31 @@ Harí Carreras Pérez
 - [ ] [Descripción del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
 - [ ] [Presentación del proyecto]()
 - [ ] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+
 - Ha participado en estos scripts de provisionamiento
 - [ ] [Script]()
 - [ ] [Script]()
 - [ ] [Script]()
 - [ ] [Script]()
+
 - Ha participado en estos tests (o issues)
 - [ ] [Test]()
 - [ ] [Test]()
 - [ ] [Test]()
 - [ ] [Test]()
 - [ ] [Test]()
+
 - Ha participado en esta integración continua y PaaS
 - [ ] [Integracion]()
 - [ ] [Integracion]()
 - [ ] [Integracion]()
 - [ ] [Integracion]()
+
 - Ha participado en esta configuración de despliegue automático
 - [ ] [Despliegue]()
 - [ ] [Despliegue]()
 - [ ] [Despliegue]()
+
 - Ha participado en el desarrollo del proyecto
 - [ ] [Desarrollo]()
 - [ ] [Desarrollo]()
