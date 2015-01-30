@@ -1,27 +1,19 @@
 #!/bin/bash
-# Instalamos esenciales
 sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion pkg-config
 
-# Instalamos ruby junto con rails con el gestor de paquetes rvm
 gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
 \curl -sSL https://get.rvm.io | bash -s stable --rails
 
-# Clonamos el directorio del proyecto
 git clone https://github.com/hcarreras/AGA-OSL-rails-app.git
 
-# Accedemos a el
 cd AGA-OSL-rails-app
 
-# Instalamos las gemas necesarias
 bundle install
-# Instalamos la gema nokogiri
 gem install nokogiri -v '1.6.3.1' -- --use-system-libraries
-# Seguimos instalando las gemas
 bundle install
 	
-# Instalamos nodejs
 curl -sL https://deb.nodesource.com/setup | sudo bash -
+    
 sudo apt-get install -y nodejs
-   
-# Iniciamos el servidor 
+    
 rails s
