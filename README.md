@@ -104,13 +104,13 @@ Juan Antonio Marín Sanchez
 - [ ] [Integracion]()
 - [ ] [Integracion]()
 - Ha participado en esta configuración de despliegue automático
-- [ ][Despliegue]()
-- [ ][Despliegue]()
-- [ ][Despliegue]()
+- [ ] [Despliegue]()
+- [ ] [Despliegue]()
+- [ ] [Despliegue]()
 - Ha participado en el desarrollo del proyecto
-- [ ][Desarrollo]()
-- [ ][Desarrollo]()
-- [ ][Desarrollo]()
+- [ ] [Desarrollo]()
+- [ ] [Desarrollo]()
+- [ ] [Desarrollo]()
 
 
 Pablo Perez Ruíz
@@ -135,13 +135,13 @@ Pablo Perez Ruíz
 - [ ] [Integracion]()
 - [ ] [Integracion]()
 - Ha participado en esta configuración de despliegue automático
-- [ ][Despliegue]()
-- [ ][Despliegue]()
-- [ ][Despliegue]()
+- [ ] [Despliegue]()
+- [ ] [Despliegue]()
+- [ ] [Despliegue]()
 - Ha participado en el desarrollo del proyecto
-- [ ][Desarrollo]()
-- [ ][Desarrollo]()
-- [ ][Desarrollo]()
+- [ ] [Desarrollo]()
+- [ ] [Desarrollo]()
+- [ ] [Desarrollo]()
 
 
 Samuel Hernández Ballesteros
