@@ -176,6 +176,33 @@ Pulsamos sobre Aplicar los cambios y Guardar.
 
 Acceder a Jenkins de nuestro proyecto: http://178.62.117.12:8080/
 
+#####Para asociar el servicio de jenkins en github, hemos hecho lo siguiente:
+
+En nuestro repositorio, nos hemos ido al menu vertical de la derecha, y le hemos dado a Settings:
+![IMAGEN1](http://i57.tinypic.com/2mhshew.jpg)
+
+Webhooks & Services, add service, y hemos seleccionado del despegable "Jenkins (Git plugin)".
+
+![IMAGEN2](http://i62.tinypic.com/hvcw79.jpg)
+
+Abajo en el casillero hemos introducido la url de jenkins en la máquina virtual de Digital Ocean:
+
+http://178.62.92.114:8080//github-webhook/
+
+Y le hemos dado a Add Service:
+
+![IMAGEN3](http://i57.tinypic.com/15ofh2h.jpg)
+
+Una vez asociado el servicio al repositorio, cada vez que se haga un push al repositorio se hará una nueva build en jenkins.
+
+Accedemos a la url: http://178.62.92.114:8080/
+
+Nos autenticamos y seleccionamos AGA-OSL-WEB y le damos a GitHub Hook Log. Ahí está el log del último push que se hizo:
+
+
+![IMAGEN4](http://i57.tinypic.com/35koduo.jpg)
+
+
 ### Provisionamiento
 
 Hemos utilizado Vagrant, una herramienta para configurar automáticamente un entorno de desarrollo dentro de una máquina virtual en el ordenador. Esto sirve para que el entorno de desarrollo pueda coincidir exactamente con el servidor de producción y todos los compañeros del proyecto puedan ejecutar exactamente el mismo software.
