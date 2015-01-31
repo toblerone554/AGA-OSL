@@ -297,6 +297,8 @@ Aquí, podemos ejecutar bundle para instalar todas las gemas como solemos hacer 
 
 Desde este directorio podemos hacer rails server para ejecutar nuestro servidor rails en el puerto 3000.
 
+Este proceso se ha automatizado mediante un [script de provisionamiento](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/script_provisionamiento) para la instalación de vagrant, chef y virtualbox
+
 
 
 
