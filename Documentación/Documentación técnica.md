@@ -55,7 +55,13 @@ En el apartado transaction podemos que funciones se han ejecutado en el REST y s
 
 ### TEST Realizados a las diferentes aplicaciones
 
-Ahora mismo no tenemos test
+Hemos realizado tests para las diferentes partes del proyecto
+
+Cliente Web
+
+Servidor REST RoR
+
+Aplicación Android
 
 ### Integración Continua
 
