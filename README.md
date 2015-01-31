@@ -83,7 +83,8 @@ Documento de google docs para organización del proyecto
 **Participación**
 
 Juan Antonio Marín Sanchez
-- Ha participado en la documentación
+
+Ha participado en la documentación
 
 
 - [ ] [Descripción del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
@@ -136,6 +137,7 @@ Ha participado en el desarrollo del proyecto
 
 
 Pablo Perez Ruíz
+
 Ha participado en la documentación
 
 
@@ -249,6 +251,7 @@ Ha participado en el desarrollo del proyecto
 
 
 Harí Carreras Pérez
+
 Ha participado en la documentación
 
 
