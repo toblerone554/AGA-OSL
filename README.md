@@ -161,10 +161,8 @@ Samuel Hernández Ballesteros
 - [ ] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
 
 - Ha participado en estos scripts de provisionamiento
-- [ ] [Script]()
-- [ ] [Script]()
-- [ ] [Script]()
-- [ ] [Script]()
+- [ ] [Vagrantfile]()
+- [ ] [Cheffile]()
 
 - Ha participado en estos tests (o issues)
 - [ ] [Test]()
@@ -174,10 +172,8 @@ Samuel Hernández Ballesteros
 - [ ] [Test]()
 
 - Ha participado en esta integración continua y PaaS
-- [ ] [Integracion]()
-- [ ] [Integracion]()
-- [ ] [Integracion]()
-- [ ] [Integracion]()
+- [ ] [Jenkins en Digital Ocean Droplet](http://178.62.92.114:8080/)
+- [ ] [Documentación - Parte de integración continua]()
 
 - Ha participado en esta configuración de despliegue automático
 - [ ] [Despliegue]()
