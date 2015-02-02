@@ -11,7 +11,9 @@ Integrantes actuales:
 
 [Repositorio de la aplicación REST Ruby On Rails](https://github.com/hcarreras/AGA-OSL-rails-app)
 
-[Aplicación desplegada en Heroku](http://aga-osl.herokuapp.com/)
+[Aplicación desplegada en Heroku](http://aga-osl.herokuapp.com/stock.json)
+
+[Documentación - Apartado de REST API](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
 
 También estamos desarrollando dos aplicaciones de tipo cliente que interactuarán con esta aplicación haciendo uso de la información que reciban.
 
@@ -19,9 +21,7 @@ Estas aplicaciones de tipo cliente son una página web y una aplicación Android
 
 **Cliente Android**
 
-[Repositorio de la aplicación Android](https://github.com/Samu92/AGA-OSL-Android-App)
-
-[Aplicación Android](https://github.com/Samu92/AGA-OSL-Android-App)
+[Repositorio de la aplicación Android - Documentación en Readme](https://github.com/Samu92/AGA-OSL-Android-App)
 
 [Enlace al APK](https://github.com/Samu92/AGA-OSL-Android-App/blob/master/bin/AgaOsl.apk)
 
@@ -39,11 +39,13 @@ En la parte de documentación y pruebas tenemos:
 
 [Presentación web](https://github.com/Samu92/AGA-OSL/tree/master/Documentaci%C3%B3n/Presentaci%C3%B3n)
 
+[Documentación del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
+
 **Contenedores**
 
 DockerHub
 
-[Documentación - Apartado de contenedores](https://github.com/Samu92/AGA-OSL/tree/master/Documentaci%C3%B3n/Presentaci%C3%B3n)
+[Documentación - Apartado de contenedores](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
 
 **Tests y Pruebas**
 
@@ -100,6 +102,7 @@ Ha participado en la documentación
 - [x] [Descripción del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
 - [ ] [Presentación del proyecto]()
 - [x] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+- [ ] [Documentación REST - Apartado REST API](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
 
 Ha participado en el desarrollo de los siguientes contenedores
 
@@ -157,6 +160,7 @@ Ha participado en la documentación
 - [x] [Descripción del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
 - [ ] [Presentación del proyecto]()
 - [x] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+- [ ] [Documentación REST - Apartado REST API](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
 
 Ha participado en el desarrollo de los siguientes contenedores
 
@@ -217,6 +221,7 @@ Ha participado en la documentación
 - [x] [Descripción del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
 - [x] [Presentación del proyecto]()
 - [x] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+- [x] [Documentación REST - Apartado REST API](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
 
 Ha participado en el desarrollo de los siguientes contenedores
 
@@ -257,7 +262,7 @@ Ha participado en esta configuración de despliegue automático
 
 - [ ] [Heroku - Aplicación Rails](https://aga-osl.herokuapp.com/stock.json)
 - [ ] [AppSpot - Web](http://aga-osl-web.appspot.com/)
-- [ ] [Script Rails - Heroku]()
+- [x] [Script Rails - Heroku]()
 
 Ha participado en el desarrollo del proyecto
 
@@ -275,6 +280,7 @@ Ha participado en la documentación
 - [x] [Descripción del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
 - [x] [Presentación del proyecto]()
 - [x] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+- [x] [Documentación REST - Apartado REST API](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
 
 Ha participado en el desarrollo de los siguientes contenedores
 
@@ -315,7 +321,7 @@ Ha participado en esta configuración de despliegue automático
 
 - [x] [Heroku - Aplicación Rails](https://aga-osl.herokuapp.com/stock.json)
 - [ ] [AppSpot - Web](http://aga-osl-web.appspot.com/)
-- [ ] [Script Rails - Heroku]()
+- [x] [Script Rails - Heroku]()
 
 Ha participado en el desarrollo del proyecto
 
