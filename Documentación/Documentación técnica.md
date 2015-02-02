@@ -63,6 +63,25 @@ Servidor REST RoR
 
 Aplicación Android
 
+**Tests a servidor REST RoR**
+
+El REST tiene diferentes tests para comprobar su correcto funcionamiento. 
+Hemos usado lo popular librería [Rspec](http://rspec.info/) para crear los tests. El motivo es que usa una mejor sintaxis que los test que usa Rails por defecto. 
+
+Tenemos dos tipos de tests para el REST:
+Test de controladores:
+Básicamente comprueban que el REST devuelve una estado OK cuando la petición es correcta. 
+Estos test comprueban exactamente que la función INDEX y SHOW de nuestro recurso stock devuelve un 200 si la petición es correcta. [Enlace a test del controlador](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/spec/controllers/stock_controller_spec.rb)
+Para el controlador "Search" (utilizado para filtar los datos desactualizados), no solo comprueba que la respuesta sea 200, si no que además comprueba que la respuesta está filtrada correctamente.  [Enlace a test del controlador](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/spec/controllers/searches_controller_spec.rb)
+
+[Test de modelos](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/spec/model/document_spec.rb):
+Comprueban que la lógica interna usada en el REST es correcta.
+Para ello hemos creado una [hoja de cálculos diferente](https://docs.google.com/spreadsheets/d/1hpawAU9Y0cKmKXg0ROtTwPVmA_qkd9y-0tS2HheZ5RI), ya que vamos a modificarla durante los tests, y esto no debería afectar a la hoja que se usa para producción.
+* Los test inicializan la aplicación con los datos de la hoja de cálculos y comprueba que se generan los modelos de manera válida.
+* Comprueba como dado una referencia el modelo devuelve el equipo correcto o una excepción 404 si no encuentra el equipo.
+* Comprueba como dado los datos de un equipo, los añade correctamente a la hoja de cálculo, modificando correctamente los parámetros de control (Última referencia)
+* Comprueba como dado los datos actualiza un equipo o devuelve 404 si el equipo que se intenta modificar no existe. 
+
 ### Integración Continua
 
 Para la integración continua hemos utilizado Jenkins, siguiendo el siguiente tutorial:
