@@ -262,7 +262,7 @@ Ha participado en esta configuración de despliegue automático
 
 - [ ] [Heroku - Aplicación Rails](https://aga-osl.herokuapp.com/stock.json)
 - [ ] [AppSpot - Web](http://aga-osl-web.appspot.com/)
-- [ ] [Script Rails - Heroku]()
+- [x] [Script Rails - Heroku]()
 
 Ha participado en el desarrollo del proyecto
 
@@ -321,7 +321,7 @@ Ha participado en esta configuración de despliegue automático
 
 - [x] [Heroku - Aplicación Rails](https://aga-osl.herokuapp.com/stock.json)
 - [ ] [AppSpot - Web](http://aga-osl-web.appspot.com/)
-- [ ] [Script Rails - Heroku]()
+- [x] [Script Rails - Heroku]()
 
 Ha participado en el desarrollo del proyecto
 
