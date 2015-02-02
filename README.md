@@ -39,6 +39,8 @@ En la parte de documentación y pruebas tenemos:
 
 [Presentación web](https://github.com/Samu92/AGA-OSL/tree/master/Documentaci%C3%B3n/Presentaci%C3%B3n)
 
+[Documentación del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
+
 **Contenedores**
 
 DockerHub
