@@ -19,8 +19,8 @@ Tras mucha guerra intentando hacer un Dockerfile desde una imagen de ubuntu, al 
 
 Gracias a que hay imagenes con rails que otros usuarios comparten, el [Dockerfile](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/Dockerfile) se ha quedado realmente sencillo. Esta imagen base de Docker, tiene ya ruby y rails, asi como nginx y otras liberías necesarias. Al ejecutar build:
 
-*Copiará el directorio base (en el cual está la aplicación rails) a "/app". 
-*Ejecutará el comando "bundle install" el cual instala todas las dependencias de rails.
+* Copiará el directorio base (en el cual está la aplicación rails) a "/app". 
+* Ejecutará el comando "bundle install" el cual instala todas las dependencias de rails.
 
 Al ejecutar el comando run ejecutará el servidor y dará salida al puerto 80
 
