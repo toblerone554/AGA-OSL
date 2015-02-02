@@ -82,7 +82,7 @@ Para ello hemos creado una [hoja de cálculos diferente](https://docs.google.com
 * Comprueba como dado los datos de un equipo, los añade correctamente a la hoja de cálculo, modificando correctamente los parámetros de control (Última referencia)
 * Comprueba como dado los datos actualiza un equipo o devuelve 404 si el equipo que se intenta modificar no existe.
 
-** Test a la aplicación Android**
+**Test a la aplicación Android**
 
 Para realizar test a la aplicación Android se ha utilizado el [Framework JUnit](http://junit.org/) para hacer test de las diferentes llamadas al servidor REST. En el siguiente [enlace](https://github.com/Samu92/AGA-OSL-Android-App/blob/master/src/com/etsiit/agaosl/TestAgaOsl.java) podemos ver el código del TestCase utilizado.
 
