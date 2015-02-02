@@ -15,7 +15,7 @@ Harí Carreras Pérez
 ###Contenedor de pruebas para AGA-OSL
 
 
-Tras mucha guerra intentando hacer un Dockerfile desde una imagen de ubuntu, al final gracias a como Docker permite compartir imagenes, ha resultado ser extraordinariamente sencillo al final. 
+Tras mucha guerra intentando hacer un Dockerfile desde una imagen de ubuntu, al final gracias a que Docker permite compartir imagenes, ha resultado ser extraordinariamente sencillo al final. 
 
 Gracias a que hay imagenes con rails que otros usuarios comparten, el [Dockerfile](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/Dockerfile) se ha quedado realmente sencillo. Esta imagen base de Docker, tiene ya ruby y rails, asi como nginx y otras liberías necesarias. Al ejecutar build:
 
