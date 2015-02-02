@@ -11,7 +11,7 @@ Integrantes actuales:
 
 [Repositorio de la aplicación REST Ruby On Rails](https://github.com/hcarreras/AGA-OSL-rails-app)
 
-[Aplicación desplegada en Heroku](http://aga-osl.herokuapp.com/)
+[Aplicación desplegada en Heroku](http://aga-osl.herokuapp.com/stock.json)
 
 [Documentación - Apartado de REST API](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
 
