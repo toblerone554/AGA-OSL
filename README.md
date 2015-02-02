@@ -118,7 +118,7 @@ Ha participado en estos tests (o issues)
 
 - [x] [Test - SimpleTest PHP para la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App/tree/master/simpletest)
 - [ ] [Test - Test de Rails Rspec](https://github.com/hcarreras/AGA-OSL-rails-app/tree/master/spec)
-- [ ] [Test - Test de Android]()
+- [ ] [Test - Test de Android JUnit](https://github.com/Samu92/AGA-OSL-Android-App/blob/master/src/com/etsiit/agaosl/TestAgaOsl.java)
 - [x] [Definiendo el REST](https://github.com/Samu92/AGA-OSL/issues/14)
 - [x] [Conectar con la API Google Drive](https://github.com/Samu92/AGA-OSL/issues/4)
 - [x] [Urgente - Correciones](https://github.com/Samu92/AGA-OSL/issues/15)
@@ -135,17 +135,17 @@ Ha participado en esta integración continua y PaaS
 Ha participado en esta configuración de despliegue automático
 
 
-- [ ] [Heroku - Aplicación Rails]()
-- [x] [AppSpot - Web]()
+- [ ] [Heroku - Aplicación Rails](https://aga-osl.herokuapp.com/stock.json)
+- [x] [AppSpot - Web](http://aga-osl-web.appspot.com/)
 
 
 
 Ha participado en el desarrollo del proyecto
 
 
-- [x] [Desarrollo de la Web]()
-- [ ] [Desarrollo del REST RoR]()
-- [ ] [Desarrollo de la aplicación Android]()
+- [x] [Desarrollo de la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App)
+- [ ] [Desarrollo del REST RoR](https://github.com/hcarreras/AGA-OSL-rails-app)
+- [ ] [Desarrollo de la aplicación Android](https://github.com/Samu92/AGA-OSL-Android-App)
 
 
 Pablo Perez Ruíz
@@ -174,7 +174,7 @@ Ha participado en estos tests (o issues)
 
 - [x] [Test - SimpleTest PHP para la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App/tree/master/simpletest)
 - [ ] [Test - Test de Rails Rspec](https://github.com/hcarreras/AGA-OSL-rails-app/tree/master/spec)
-- [ ] [Test - Test de Android]()
+- [ ] [Test - Test de Android JUnit](https://github.com/Samu92/AGA-OSL-Android-App/blob/master/src/com/etsiit/agaosl/TestAgaOsl.java)
 - [x] [Definiendo el REST](https://github.com/Samu92/AGA-OSL/issues/14)
 - [x] [Conectar con la API Google Drive](https://github.com/Samu92/AGA-OSL/issues/4)
 - [x] [Urgente - Correciones](https://github.com/Samu92/AGA-OSL/issues/15)
@@ -192,17 +192,17 @@ Ha participado en esta integración continua y PaaS
 Ha participado en esta configuración de despliegue automático
 
 
-- [ ] [Heroku - Aplicación Rails]()
-- [x] [AppSpot - Web]()
+- [ ] [Heroku - Aplicación Rails](https://aga-osl.herokuapp.com/stock.json)
+- [x] [AppSpot - Web](http://aga-osl-web.appspot.com/)
 
 
 
 Ha participado en el desarrollo del proyecto
 
 
-- [x] [Desarrollo de la Web]()
-- [ ] [Desarrollo del REST RoR]()
-- [ ] [Desarrollo de la aplicación Android]()
+- [x] [Desarrollo de la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App)
+- [ ] [Desarrollo del REST RoR](https://github.com/hcarreras/AGA-OSL-rails-app)
+- [ ] [Desarrollo de la aplicación Android](https://github.com/Samu92/AGA-OSL-Android-App)
 
 
 Samuel Hernández Ballesteros
@@ -234,7 +234,7 @@ Ha participado en estos tests (o issues)
 
 - [ ] [Test - SimpleTest PHP para la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App/tree/master/simpletest)
 - [ ] [Test - Test de Rails Rspec](https://github.com/hcarreras/AGA-OSL-rails-app/tree/master/spec)
-- [x] [Test - Test de Android]()
+- [x] [Test - Test de Android JUnit](https://github.com/Samu92/AGA-OSL-Android-App/blob/master/src/com/etsiit/agaosl/TestAgaOsl.java)
 - [x] [Definiendo el REST](https://github.com/Samu92/AGA-OSL/issues/14)
 - [x] [Conectar con la API Google Drive](https://github.com/Samu92/AGA-OSL/issues/4)
 - [x] [Urgente - Correciones](https://github.com/Samu92/AGA-OSL/issues/15)
@@ -252,15 +252,16 @@ Ha participado en esta integración continua y PaaS
 Ha participado en esta configuración de despliegue automático
 
 
-- [ ] [Heroku - Aplicación Rails]()
-- [ ] [AppSpot - Web]()
+- [ ] [Heroku - Aplicación Rails](https://aga-osl.herokuapp.com/stock.json)
+- [ ] [AppSpot - Web](http://aga-osl-web.appspot.com/)
+- [ ] Script Rails - Heroku
 
 Ha participado en el desarrollo del proyecto
 
 
-- [ ] [Desarrollo de la Web]()
-- [x] [Desarrollo del REST RoR]()
-- [x] [Desarrollo de la aplicación Android]()
+- [ ] [Desarrollo de la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App)
+- [x] [Desarrollo del REST RoR](https://github.com/hcarreras/AGA-OSL-rails-app)
+- [x] [Desarrollo de la aplicación Android](https://github.com/Samu92/AGA-OSL-Android-App)
 
 
 Harí Carreras Pérez
@@ -290,7 +291,7 @@ Ha participado en estos tests (o issues)
 
 - [ ] [Test - SimpleTest PHP para la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App/tree/master/simpletest)
 - [x] [Test - Test de Rails Rspec](https://github.com/hcarreras/AGA-OSL-rails-app/tree/master/spec)
-- [ ] [Test - Test de Android]()
+- [ ] [Test - Test de Android JUnit](https://github.com/Samu92/AGA-OSL-Android-App/blob/master/src/com/etsiit/agaosl/TestAgaOsl.java)
 - [x] [Definiendo el REST](https://github.com/Samu92/AGA-OSL/issues/14)
 - [x] [Conectar con la API Google Drive](https://github.com/Samu92/AGA-OSL/issues/4)
 - [x] [Urgente - Correciones](https://github.com/Samu92/AGA-OSL/issues/15)
@@ -308,15 +309,15 @@ Ha participado en esta integración continua y PaaS
 Ha participado en esta configuración de despliegue automático
 
 
-- [x] [Heroku - Aplicación Rails]()
-- [ ] [AppSpot - Web]()
-
+- [x] [Heroku - Aplicación Rails](https://aga-osl.herokuapp.com/stock.json)
+- [ ] [AppSpot - Web](http://aga-osl-web.appspot.com/)
+- [ ] [Script Rails - Heroku]()
 
 Ha participado en el desarrollo del proyecto
 
 
-- [ ] [Desarrollo de la Web]()
-- [x] [Desarrollo del REST RoR]()
-- [ ] [Desarrollo de la aplicación Android]()
+- [ ] [Desarrollo de la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App)
+- [x] [Desarrollo del REST RoR](https://github.com/hcarreras/AGA-OSL-rails-app)
+- [ ] [Desarrollo de la aplicación Android](https://github.com/Samu92/AGA-OSL-Android-App)
 
 
