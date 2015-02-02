@@ -21,9 +21,7 @@ Estas aplicaciones de tipo cliente son una página web y una aplicación Android
 
 **Cliente Android**
 
-[Repositorio de la aplicación Android](https://github.com/Samu92/AGA-OSL-Android-App)
-
-[Aplicación Android](https://github.com/Samu92/AGA-OSL-Android-App)
+[Repositorio de la aplicación Android - Documentación en Readme](https://github.com/Samu92/AGA-OSL-Android-App)
 
 [Enlace al APK](https://github.com/Samu92/AGA-OSL-Android-App/blob/master/bin/AgaOsl.apk)
 
