@@ -15,7 +15,29 @@ Harí Carreras Pérez
 ###Contenedor de pruebas para AGA-OSL
 
 
-### Contenedor desplegado
+Tras mucha guerra intentando hacer un Dockerfile desde una imagen de ubuntu, al final gracias a como Docker permite compartir imagenes, ha resultado ser extraordinariamente sencillo al final. 
+
+Gracias a que hay imagenes con rails que otros usuarios comparten, el [Dockerfile](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/Dockerfile) se ha quedado realmente sencillo. Esta imagen base de Docker, tiene ya ruby y rails, asi como nginx y otras liberías necesarias. Al ejecutar build:
+
+*Copiará el directorio base (en el cual está la aplicación rails) a "/app". 
+*Ejecutará el comando "bundle install" el cual instala todas las dependencias de rails.
+
+Al ejecutar el comando run ejecutará el servidor y dará salida al puerto 80
+
+Para probar el dockerfile en local podemos escuchar a cualquier otro puerto o al mismo 80
+
+![Docker funcionando](http://s3.postimg.org/58zxqqvwj/Screen_Shot_2015_02_02_at_20_25_07.png)
+
+Y así hemos montando un docker funcionando con un servidor rails. 
+
+Lo hemos subido a [dockerhub](https://registry.hub.docker.com/u/hcarreras/aga-osl-rails-app/)
+
+Después desde la maquina virtual lo hemos descargado:
+![captura](http://s14.postimg.org/b79yqzbxt/Screen_Shot_2015_02_02_at_22_53_44.png)
+Y le hemos dado a ejecutar:
+![captura](http://s30.postimg.org/dkjoh16q9/Screen_Shot_2015_02_02_at_23_13_15.png)
+
+[Y aquí lo puedes ver funcionando](178.62.92.114/stock.json)
 
 ### Pruebas unitarias
 
@@ -404,29 +426,19 @@ Desde este directorio podemos hacer rails server para ejecutar nuestro servidor 
 
 Este proceso se ha automatizado mediante un [script de provisionamiento](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/script_provisionamiento) para la instalación de vagrant, chef y virtualbox
 
-**Docker**
-
-Tras mucha guerra intentando hacer un Dockerfile desde una imagen de ubuntu, al final gracias a como Docker permite compartir imagenes, ha resultado ser extraordinariamente sencillo al final. 
-Gracias a que hay imagenes con rails que otros usuarios comparten, el [Dockerfile](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/Dockerfile) se ha quedado realmente sencillo. Esta imagen base de Docker, tiene ya ruby y rails, asi como nginx y otras liberías necesarias. Al ejecutar build:
-*Copiará el directorio base (en el cual está la aplicación rails) a "/app". 
-*Ejecutará el comando "bundle install" el cual instala todas las dependencias de rails.
-Al ejecutar el comando run ejecutará el servidor y dará salida al puerto 80
-Para probar el dockerfile en local podemos escuchar a cualquier otro puerto o al mismo 80
-
-![Docker funcionando](http://s3.postimg.org/58zxqqvwj/Screen_Shot_2015_02_02_at_20_25_07.png)
-
-Y así hemos montando un docker funcionando con un servidor rails. 
-Lo hemos subido a [dockerhub](https://registry.hub.docker.com/u/hcarreras/aga-osl-rails-app/).
-Y aquí lo puedes ver funcionando: 
-
 
 ### API REST ###
 
 La API es completamente REST. 
+
 Básicamente maneja un recurso al que hemos llamado stock, el cual son los equipos de [la hoja de excel](https://docs.google.com/spreadsheets/d/1UAB7hIZ_iHl1L1i3P6m--rclLCf8wR-8g6jcQ3dRthQ)
+
 Lo primero que hace la API es autenticarse con un usuario que hemos creado para la OSL. Después pide la hoja de cálculo gracias a la gema de [google drive](https://github.com/gimite/google-drive-ruby) la cual por desgracia tiene una documentación extremadamente pobre.
+
 Esta gema nos devuelve los datos de una forma bastante cruda, por lo que la aplicación lo gestion con una clase llamada Document y otra llamada Computer, dónde Computer es una fila de la hoja.
+
 Los controladores gestionan las peticiones (después de que las rutas asignen la petición al controlador), en el caso de StockController, este gestionará las peticiones REST a las direcciones /stock.json y /stock/:id.json
+
 Un ejemplo de un Computer parseado a JSON sería:
 
 	{
@@ -452,7 +464,9 @@ Un ejemplo de un Computer parseado a JSON sería:
 	}
 
 Básicamente gestiona lo que cualquier API REST
+
 El [controllador de stock](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/app/controllers/stock_controller.rb) gestiona:
+
 Un elemento de 
 * GET /stock.json lo controla a acción index. Devuelve un json con un array de hashes, dónde cada hash es un Computer parseado a JSON
 * GET /stock/:referencia.json lo controla a acción show. Devuelve un 404 si la referencia solicitada no existe. Si existe, devuelve el Computer parseado a JSON
@@ -483,8 +497,11 @@ Para editar una instancia (update) usamos PUT. Le tenemos que pasar los nuevos d
    
     
 Para las búsquedas se ha creado un recurso llamado "Search" y su controlador es el [SearchesController](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/app/controllers/stock/searches_controller.rb) su ruta es /stock/search
+
 Cuando buscamos estamos creando una búsqueda, por lo que es exactamente lo que hacemos, llamar a la función create de Search.
+
 Hay que enviar un método http POST para crear la búsqueda. A este le pasamos como parámetros en la clave request_data los datos que actualmente tenemos, el objetivo es que devuelve los datos con una fecha de actualización mayor y los datos cuya referencia no tenemos. Esto evitará grandes cargas de datos cuando lo descargamos desde el móvil. 
+
 Los parámetros que espera es un string que dentro tenga un array de hashes, cada hash tiene 2 claves: "Referencia" y "ultima_modificacion"
 ultima modificación ha de ir en formato "dia/mes/año"
 
