@@ -330,4 +330,5 @@ Ha participado en el desarrollo del proyecto
 - [x] [Desarrollo del REST RoR](https://github.com/hcarreras/AGA-OSL-rails-app)
 - [ ] [Desarrollo de la aplicación Android](https://github.com/Samu92/AGA-OSL-Android-App)
 
+[Enlace a los commits del repositorio principal](https://github.com/Samu92/AGA-OSL/commits/master)
 
