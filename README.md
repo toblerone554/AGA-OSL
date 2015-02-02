@@ -25,7 +25,7 @@ Estas aplicaciones de tipo cliente son una página web y una aplicación Android
 
 [Enlace al APK](https://github.com/Samu92/AGA-OSL-Android-App/blob/master/bin/AgaOsl.apk)
 
-** Cliente Web**
+**Cliente Web**
 
 [Repositorio de la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App)
 
