@@ -51,7 +51,7 @@ Hemos utilizado [New Relic](http://newrelic.com/sp/brand?utm_source=GOOG&utm_med
 
 Hemos realizado test para comprobar el buen funcionamiento de las aplicaciones
 - RoR: [Rspec](https://github.com/hcarreras/AGA-OSL-rails-app/tree/master/spec)
-- Android:
+- Android: [JUnit FrameWork](https://github.com/Samu92/AGA-OSL-Android-App/blob/master/src/com/etsiit/agaosl/TestAgaOsl.java)
 - PHP: [SimpleTest](http://aga-osl-web.appspot.com/phpUnit.php)
 
 [Documentación - Apartado de test y pruebas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
