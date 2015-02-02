@@ -1,0 +1,9 @@
+#!/bin/bash
+# Descargamos heroku
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+# Logeamos
+heroku login
+# Clonamos el repositorio
+heroku git:clone -a aga-osl
+# Accedemos
+cd aga-osl

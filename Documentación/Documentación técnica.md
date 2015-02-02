@@ -57,11 +57,11 @@ En el apartado transaction podemos que funciones se han ejecutado en el REST y s
 
 Hemos realizado tests para las diferentes partes del proyecto
 
-Cliente Web
+**Test en el cliente Web**
 
-Servidor REST RoR
+Los test para la web se han realizado con [SimpleTest](http://www.simpletest.org/) para PHP.
 
-Aplicación Android
+En este [enlace](https://github.com/JAntonioMarin/AGA-OSL-Web-App/tree/master/simpletest) podemos ver los test realizados y [aquí](http://aga-osl-web.appspot.com/phpUnit.php) un ejemplo de ejecución de los mismos.
 
 **Tests a servidor REST RoR**
 
@@ -80,7 +80,18 @@ Para ello hemos creado una [hoja de cálculos diferente](https://docs.google.com
 * Los test inicializan la aplicación con los datos de la hoja de cálculos y comprueba que se generan los modelos de manera válida.
 * Comprueba como dado una referencia el modelo devuelve el equipo correcto o una excepción 404 si no encuentra el equipo.
 * Comprueba como dado los datos de un equipo, los añade correctamente a la hoja de cálculo, modificando correctamente los parámetros de control (Última referencia)
-* Comprueba como dado los datos actualiza un equipo o devuelve 404 si el equipo que se intenta modificar no existe. 
+* Comprueba como dado los datos actualiza un equipo o devuelve 404 si el equipo que se intenta modificar no existe.
+
+** Test a la aplicación Android**
+
+Para realizar test a la aplicación Android se ha utilizado el [Framework JUnit](http://junit.org/) para hacer test de las diferentes llamadas al servidor REST. En el siguiente [enlace](https://github.com/Samu92/AGA-OSL-Android-App/blob/master/src/com/etsiit/agaosl/TestAgaOsl.java) podemos ver el código del TestCase utilizado.
+
+Para ejecutar estos test simplemente habría que declarar un objeto TestAgaOsl y llamar a las distintas funciones de la siguiente forma:
+```
+ TestCase test= new TestAgaOsl("recuperar_equipo");
+ test.run();
+
+```
 
 ### Integración Continua
 
