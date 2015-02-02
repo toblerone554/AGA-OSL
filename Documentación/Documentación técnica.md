@@ -83,12 +83,12 @@ En primer lugar tenemos que instalar las dependencias Java en nuestro sistema si
 
 
 Accedemos a los repositorios de Jenkins para obtener la ultima versión:
-
+```bash
     wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
     sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
     sudo apt-get update
     sudo apt-get install jenkins
-
+```
 ![Imagen2](http://i57.tinypic.com/2qxc76r.jpg)
 
 Para añadirle seguridad a Jenkins (que no trae por defecto) entramos en la url de nuestro servidor:
@@ -214,13 +214,13 @@ También hemos utilizado Chef que nos ayuda a automatizar como nuestro entorno d
 En nuestra máquina virtual en Digital Ocean hemos seguido los siguientes pasos para configurar el provisionamiento:
 
 Primero hemos instalado Vagrant y Virtualbox
-
+```bash
 	sudo add-apt-repository multiverse
 	sudo apt-get update
 	sudo apt-get install virtualbox
 
 	sudo apt-get install vagrant
-
+```
 Después instalamos los siguientes plugins de vagrant
 
 	vagrant plugin install vagrant-vbguest
@@ -248,7 +248,7 @@ Más tarde en el VagrantFile le diremos a Vagrant cómo utilizar las recetas par
 
 En nuestro Cheffile tenemos:
 
-```
+```bash
 site  "http://community.opscode.com/api/v1"
 
 cookbook 'apt'
@@ -268,7 +268,7 @@ Utilizamos Ubuntu 14.04 de 64 bits, utilizamos el puerto 3000 de la máquina vir
 Nuestro VagrantFile
 
 
-```
+```bash
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
