@@ -111,6 +111,7 @@ Ha participado en estos scripts de provisionamiento
 - [ ] [Vagrantfile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Vagrantfile)
 - [ ] [Cheffile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Cheffile)
 - [ ] [Dockerfile](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/Dockerfile)
+- [ ] [Script de provisionamiento - Vagrant & Chef Solo](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/script_provisionamiento)
 
 
 Ha participado en estos tests (o issues)
@@ -167,6 +168,7 @@ Ha participado en estos scripts de provisionamiento
 - [ ] [Vagrantfile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Vagrantfile)
 - [ ] [Cheffile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Cheffile)
 - [ ] [Dockerfile](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/Dockerfile)
+- [ ] [Script de provisionamiento - Vagrant & Chef Solo](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/script_provisionamiento)
 
 
 Ha participado en estos tests (o issues)
@@ -227,6 +229,7 @@ Ha participado en estos scripts de provisionamiento
 - [x] [Vagrantfile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Vagrantfile)
 - [x] [Cheffile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Cheffile)
 - [ ] [Dockerfile](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/Dockerfile)
+- [x] [Script de provisionamiento - Vagrant & Chef Solo](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/script_provisionamiento)
 
 
 Ha participado en estos tests (o issues)
@@ -254,7 +257,7 @@ Ha participado en esta configuración de despliegue automático
 
 - [ ] [Heroku - Aplicación Rails](https://aga-osl.herokuapp.com/stock.json)
 - [ ] [AppSpot - Web](http://aga-osl-web.appspot.com/)
-- [ ] Script Rails - Heroku
+- [ ] [Script Rails - Heroku]()
 
 Ha participado en el desarrollo del proyecto
 
@@ -284,6 +287,7 @@ Ha participado en estos scripts de provisionamiento
 - [ ] [Vagrantfile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Vagrantfile)
 - [ ] [Cheffile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Cheffile)
 - [x] [Dockerfile](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/Dockerfile)
+- [ ] [Script de provisionamiento - Vagrant & Chef Solo](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/script_provisionamiento)
 
 
 Ha participado en estos tests (o issues)
