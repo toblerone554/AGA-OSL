@@ -61,7 +61,49 @@ Hemos realizado tests para las diferentes partes del proyecto
 
 Los test para la web se han realizado con [SimpleTest](http://www.simpletest.org/) para PHP.
 
+Para crear un test sobre una clase debemos crear una clase que extienda de UnitTestCase, en la que podemos obtener diferentes test, para nuestro caso hemos hecho unos test sencillos sobre la función de 3 clases distintas.
+
+La documentación esta en: [Api SimpleTest](http://simpletest.org/api/)
+
+Un ejemplo de test de un objeto seria:
+
+```
+ class pruebaClase extends UnitTestCase {
+  function testdefunciondeclase(){
+  $prueba = new Clase($parametros);
+  $this->assertEqual('OK', $prueba->ejecutaFuncion());}
+}
+
+```
+
+Test de comprobación de clases:
+
+![Imagen Unit](http://i58.tinypic.com/vooh8n.jpg)
+
+Y ahora tendriamos en la clase que retornar un ok en caso de que todo este correcto:
+
+```
+
+ class Clase{
+ public function ejecutaFuncion(){
+    //En caso de exito
+    return 'OK';
+  }
+ 
+ }
+
+```
+
+![Imagen Unit 2](http://i62.tinypic.com/21ditjd.jpg)
+
+
+
+
+
+
 En este [enlace](https://github.com/JAntonioMarin/AGA-OSL-Web-App/tree/master/simpletest) podemos ver los test realizados y [aquí](http://aga-osl-web.appspot.com/phpUnit.php) un ejemplo de ejecución de los mismos.
+
+![Imagen de prueba de test](http://i61.tinypic.com/dczrls.jpg)
 
 **Tests a servidor REST RoR**
 
