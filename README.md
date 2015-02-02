@@ -43,7 +43,7 @@ En la parte de documentación y pruebas tenemos:
 
 **Contenedores**
 
-[Docker - Digital Ocean Droplet](http://178.62.92.114/stock.json)
+[Docker & DockerHub - Digital Ocean Droplet](http://178.62.92.114/stock.json)
 
 [Documentación - Apartado de contenedores](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
 
