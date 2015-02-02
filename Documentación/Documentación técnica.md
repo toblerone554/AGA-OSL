@@ -362,6 +362,100 @@ Desde este directorio podemos hacer rails server para ejecutar nuestro servidor 
 
 Este proceso se ha automatizado mediante un [script de provisionamiento](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/script_provisionamiento) para la instalación de vagrant, chef y virtualbox
 
+**Docker**
+
+Tras mucha guerra intentando hacer un Dockerfile desde una imagen de ubuntu, al final gracias a como Docker permite compartir imagenes, ha resultado ser extraordinariamente sencillo al final. 
+Gracias a que hay imagenes con rails que otros usuarios comparten, el [Dockerfile](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/Dockerfile) se ha quedado realmente sencillo. Esta imagen base de Docker, tiene ya ruby y rails, asi como nginx y otras liberías necesarias. Al ejecutar build:
+*Copiará el directorio base (en el cual está la aplicación rails) a "/app". 
+*Ejecutará el comando "bundle install" el cual instala todas las dependencias de rails.
+Al ejecutar el comando run ejecutará el servidor y dará salida al puerto 80
+Para probar el dockerfile en local podemos escuchar a cualquier otro puerto o al mismo 80
+
+![Docker funcionando](http://s3.postimg.org/58zxqqvwj/Screen_Shot_2015_02_02_at_20_25_07.png)
+
+Y así hemos montando un docker funcionando con un servidor rails. 
+Lo hemos subido a [dockerhub](https://registry.hub.docker.com/u/hcarreras/aga-osl-rails-app/).
+Y aquí lo puedes ver funcionando: 
+
+
+### API REST ###
+
+La API es completamente REST. 
+Básicamente maneja un recurso al que hemos llamado stock, el cual son los equipos de [la hoja de excel](https://docs.google.com/spreadsheets/d/1UAB7hIZ_iHl1L1i3P6m--rclLCf8wR-8g6jcQ3dRthQ)
+Lo primero que hace la API es autenticarse con un usuario que hemos creado para la OSL. Después pide la hoja de cálculo gracias a la gema de [google drive](https://github.com/gimite/google-drive-ruby) la cual por desgracia tiene una documentación extremadamente pobre.
+Esta gema nos devuelve los datos de una forma bastante cruda, por lo que la aplicación lo gestion con una clase llamada Document y otra llamada Computer, dónde Computer es una fila de la hoja.
+Los controladores gestionan las peticiones (después de que las rutas asignen la petición al controlador), en el caso de StockController, este gestionará las peticiones REST a las direcciones /stock.json y /stock/:id.json
+Un ejemplo de un Computer parseado a JSON sería:
+
+	{
+		referencia: 1,
+		revisado: "",
+		localizacion: "Oficina, en uso",
+		tipo: "Sobremesa",
+		cpu: "Intel(R) Pentium(R) Dual CPU E2180",
+		mhz: "2048",
+		ram: "1024",
+		disco_duro: "160",
+		cd_dvd: "Grabadora DVD",
+		floppy: "No",
+		ethernet: "Sí",
+		fuente_alimentacion: "420 W",
+		notas: "",
+		campana_numero: "OSL",
+		puntuacion_cpu: "71433554238",
+		puntuacion_ram: "10",
+		puntuacion_dd: "10",
+		puntuacion: "85716777119",
+		ultima_modificacion: "2015-01-25"
+	}
+
+Básicamente gestiona lo que cualquier API REST
+El [controllador de stock](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/app/controllers/stock_controller.rb) gestiona:
+Un elemento de 
+* GET /stock.json lo controla a acción index. Devuelve un json con un array de hashes, dónde cada hash es un Computer parseado a JSON
+* GET /stock/:referencia.json lo controla a acción show. Devuelve un 404 si la referencia solicitada no existe. Si existe, devuelve el Computer parseado a JSON
+* POST /stock + request_data: [Datos del nuevo computer]. Es gestionado por la acción Create. Creará un Computer y lo escribirá en el excel. Asignará automáticamente la referencia necesaria, por lo que no se debe pasar como parámetro.
+* PUT /stock/:referencia.json + request_data: [Datos para el computer]. Es gestionado por la acción Update. Modificará el Computer  con referencia igual a la recibida por el argumento y lo actualizará con los datos pasados como parámetro en la clave [:data]. Los cambios los escribirá en el excel. 
+
+No tiene función DELETE debido a razones de consistencia.
+
+Ejemplos de llamadas CURL a la API:
+
+Get del recurso (index) en formato json
+
+    curl -X GET -H "Content-Type: application/json"  http://aga-osl.herokuapp.com/stock.json
+
+Get de una instancia del recurso (show) en formato json
+
+    curl -X GET -H "Content-Type: application/json"  http://aga-osl.herokuapp.com/stock/:referencia.json
+    curl -X GET -H "Content-Type: application/json"  http://aga-osl.herokuapp.com/stock/226.json
+
+POST para crear
+
+    curl -X POST -H "Content-Type: application/json" -d "{\"data\":[\"Testing con curl\",\"no importante\",\"\",\"borrable\"]}"  http://aga-osl.herokuapp.com/stock.json
+
+Para editar una instancia (update) usamos PUT. Le tenemos que pasar los nuevos datos como si fuese un create.
+
+    curl -X PUT -H "Content-Type: application/json" -d "{\"data\":[]}"  http://aga-osl.herokuapp.com/stock/:referencia.json
+    curl -X PUT -H "Content-Type: application/json" -d "{\"data\":[\"Nuevos datos\",\"no son importante\",\"\",\"\",\"borrable\"]}"  http://aga-osl.herokuapp.com/stock/389.json
+   
+    
+Para las búsquedas se ha creado un recurso llamado "Search" y su controlador es el [SearchesController](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/app/controllers/stock/searches_controller.rb) su ruta es /stock/search
+Cuando buscamos estamos creando una búsqueda, por lo que es exactamente lo que hacemos, llamar a la función create de Search.
+Hay que enviar un método http POST para crear la búsqueda. A este le pasamos como parámetros en la clave request_data los datos que actualmente tenemos, el objetivo es que devuelve los datos con una fecha de actualización mayor y los datos cuya referencia no tenemos. Esto evitará grandes cargas de datos cuando lo descargamos desde el móvil. 
+Los parámetros que espera es un string que dentro tenga un array de hashes, cada hash tiene 2 claves: "Referencia" y "ultima_modificacion"
+ultima modificación ha de ir en formato "dia/mes/año"
+
+* Post /stock/search.json + request_data["[Datos que tenemos]"] 
+
+Ejemplo con curl:
+
+    curl -X POST -H "Content-Type: application/json" -d "{\"request_data\":\"[{referencia: 1, ultima_modificacion: '26/01/2015'},{referencia: 300, ultima_modificacion: '16/01/2015'}]\"}"  http://aga-osl.herokuapp.com/stock/search.json
+
+En este ejemplo devolverá todos los equipos excepto:
+	El equipo con referencia 1 si su fecha de ultima_modificación es posterior al 26/01/2015
+	El equipo con referencia 300 si su fecha de ultima_modificación es posterior al 16/01/2015
+**Notese que los datos están dentro de un string**
 
 
 
